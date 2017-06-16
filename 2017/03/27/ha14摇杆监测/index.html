@@ -1,0 +1,901 @@
+
+<!doctype html>
+<html class="theme-next use-motion theme-next-mala">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+  <meta name="google-site-verification" content="9KSJHwRk-w65aBEuVrJHaNkOSgPnak9oIC4bpY7OIj8" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="自己选择的路..." />
+
+
+
+  <meta name="keywords" content="HAOI,贪心," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="kZime's blog" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="[HAOI2014]遥感监测题目描述 外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的">
+<meta name="keywords" content="HAOI,贪心">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HAOI2014遥感监测题解">
+<meta property="og:url" content="http://kzime.xyz/2017/03/27/ha14摇杆监测/index.html">
+<meta property="og:site_name" content="kZime&#39;s blog">
+<meta property="og:description" content="[HAOI2014]遥感监测题目描述 外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的">
+<meta property="og:image" content="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png">
+<meta property="og:image" content="http://218.28.19.228/upload/image/20170327/20170327094625_62844.png">
+<meta property="og:updated_time" content="2017-05-03T14:56:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HAOI2014遥感监测题解">
+<meta name="twitter:description" content="[HAOI2014]遥感监测题目描述 外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的">
+<meta name="twitter:image" content="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mala',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> HAOI2014遥感监测题解 | kZime's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'xxx', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?7f98f1f8c73489fb85b3d53df668e211";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">kZime</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-next-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'xxx','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    
+      
+
+      
+
+    
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              HAOI2014遥感监测题解
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-03-27T15:06:26+08:00" content="2017-03-27">
+            2017-03-27
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/题解/" itemprop="url" rel="index">
+                  <span itemprop="name">题解</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2017/03/27/ha14摇杆监测/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/27/ha14摇杆监测/" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h1 id="HAOI2014-遥感监测"><a href="#HAOI2014-遥感监测" class="headerlink" title="[HAOI2014]遥感监测"></a><a href="#HAOI2014-遥感监测" title="[HAOI2014]遥感监测"></a><a href="http://cogs.pro/cogs/problem/problem.php?pid=1679" target="_blank" rel="external">[HAOI2014]遥感监测</a></h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="#题目描述" title="题目描述"></a>题目描述</h2><blockquote>
+<p>外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。<br><a id="more"></a><br>ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的发现。ZDM-99星球表面有着明显的明暗变化。对这些明暗区域，天文学家们已经细致地研究了很多年，并且绘制出了较为详尽的地图，那些暗区是陆地，而亮区则是湖泊和海洋。他们一直坚信有水的地方，一定有生命的痕迹。</p>
+<p>这天晚上的观测条件实在是空前的好，ZDM-99星球也十分明亮，不时呈现出若干个激光点，天文学家们推定这些激光点极有可能存在地球以外的智慧生命。遗憾的是仅持续很短的一段时间，这些激光点就消失了。</p>
+<p>ZDM实验室的射电望远镜观测的区域有限，只可以遥感检测到一个半径为R的圆形区域。为了能同时能检测到所有的激光点，ZDM实验室需要要在一个水平的直线上尽快地安装多个的射电望远镜来。</p>
+<p>不妨设，这条安放射电望远镜的水平直线为X轴，ZDM-99星球激光点就处在P1（x1,y1）P2(x2,y2)  ，…… ，Pn(xn,yn)。（忽略Z坐标）<br><a href="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png" target="_blank" rel="external"><img src="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png" alt=""></a><br>ZDM实验室的天文学家们想知道，至少需要安装多少个射电望远镜才能检测到所有激光点。</p>
+</blockquote>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a><a href="#输入格式" title="输入格式"></a>输入格式</h2><blockquote>
+<p>第1行:  N   R   分别表示激光点的个数和射电望远镜能检测到的半径<br>第2~N+1行： Xi  Yi      表示 激光点的坐标位置</p>
+</blockquote>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a><a href="#输出格式" title="输出格式"></a>输出格式</h2><blockquote>
+<p>输出一行： 最少需要安装的射电望远镜数。</p>
+</blockquote>
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><a href="#样例输入" title="样例输入"></a>样例输入</h2><blockquote>
+<p>3 2<br>1 2<br>-3 1<br>2 1</p>
+</blockquote>
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a><a href="#样例输出" title="样例输出"></a>样例输出</h2><blockquote>
+<p>2</p>
+</blockquote>
+<h2 id="约束条件"><a href="#约束条件" class="headerlink" title="约束条件"></a><a href="#约束条件" title="约束条件"></a>约束条件</h2><blockquote>
+<p>1≤R≤50     1≤N≤100   -1000≤ Xi  Yi ≤ 1000     | Yi | ≤ R<br>N，R, Xi  Yi都是整数。数据之间有一个空格。</p>
+</blockquote>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a><a href="#题解" title="题解"></a>题解</h2><p>大概是个贪心，找出能保证包住最靠左的激光点的最靠右边的x轴坐标，但是枚举所以点时间复杂度明显太高，所以换一种思路，使用结构体处理出每个激光点所能被包住的可以作为望远镜的可行区间</p>
+<p><a href="http://218.28.19.228/upload/image/20170327/20170327094625_62844.png" target="_blank" rel="external"><img src="http://218.28.19.228/upload/image/20170327/20170327094625_62844.png" alt=""></a><br>处理方法很简单<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">	<span class="keyword">double</span> fan=<span class="built_in">sqrt</span>(<span class="built_in">pow</span>(r,<span class="number">2</span>)-<span class="built_in">pow</span>(p[i].y,<span class="number">2</span>));<span class="comment">//pow()是n次方函数pow(x,n)表示x的n次方</span></div><div class="line">	p[i].l=p[i].x-fan;</div><div class="line">	p[i].r=p[i].x+fan;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后对处理后的区间按照右端点进行排序(请同学们自主思考：为什么是右端点)然后进行统计<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> k=<span class="number">1</span>, ans=<span class="number">1</span>;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</div><div class="line">	<span class="keyword">if</span>(p[i].l&lt;=p[k].r)&#123;<span class="comment">//p[k].r点可观测到点i</span></div><div class="line">		<span class="keyword">continue</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span> &#123;<span class="comment">//更新k</span></div><div class="line">		k=i;</div><div class="line">		ans++;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>最后放一下全部代码</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a><a href="#代码实现" title="代码实现"></a>代码实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> ans,r,n;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="keyword">int</span> k=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">char</span> c=getchar();</div><div class="line">	<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">	<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">	<span class="keyword">return</span> k*f;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">mp</span>&#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="keyword">int</span> x;</div><div class="line">	<span class="keyword">int</span> y;</div><div class="line">	<span class="keyword">double</span> l;</div><div class="line">	<span class="keyword">double</span> r;</div><div class="line">&#125;p[<span class="number">2333</span>];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(mp a,mp b)</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> a.r&lt;b.r;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	freopen(<span class="string">"ha14a.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"ha14a.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</div><div class="line">	n=read();</div><div class="line">	r=read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">		p[i].x=read();</div><div class="line">		p[i].y=read();</div><div class="line">		<span class="keyword">if</span>(<span class="built_in">abs</span>(p[i].y)&gt;r)&#123;</div><div class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="number">-1</span>;</div><div class="line">			<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">		<span class="keyword">double</span> fan=<span class="built_in">sqrt</span>(<span class="built_in">pow</span>(r,<span class="number">2</span>)-<span class="built_in">pow</span>(p[i].y,<span class="number">2</span>));</div><div class="line">		p[i].l=p[i].x-fan;</div><div class="line">		p[i].r=p[i].x+fan;</div><div class="line">	&#125;</div><div class="line">	sort(p+<span class="number">1</span>,p+<span class="number">1</span>+n,cmp);</div><div class="line">	<span class="keyword">int</span> k=<span class="number">1</span>;</div><div class="line">	ans=<span class="number">1</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</div><div class="line">		<span class="keyword">if</span>(p[i].l&lt;=p[k].r)&#123;</div><div class="line">			<span class="keyword">continue</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">else</span> &#123;</div><div class="line">			k=i;</div><div class="line">			ans++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,ans);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HAOI/" rel="tag">#HAOI</a>
+          
+            <a href="/tags/贪心/" rel="tag">#贪心</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/11/CF-408div2/" rel="prev">CF#408div2</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/25/12dora/" rel="next">纪念12Dora</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div>
+      
+        <style type="text/css">
+
+    .donate_bar {
+        text-align: center;
+        margin-top : 5%;
+    }
+
+    .donate_bar.hidden {
+        display:none;
+    }
+/*
+    .donate_bar a.btn_donate {
+        display: inline-block;
+        width: 82px;
+        height: 82px;
+        margin-left:auto;
+        margin-right:auto;
+
+        background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+        _background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat; 
+
+        -webkit-transition: background 0s;
+        -moz-transition: background 0s;
+        -o-transition: background 0s;
+        -ms-transition: background 0s;
+        transition: background 0s;
+    }
+*/
+    .donate_bar a.btn_donate:hover { 
+        // background-position: 0px -82px;
+        color: #87daff
+    }
+
+    .donate_bar .donate_txt {
+        display: block;
+        color: #9d9d9d;
+        font: 14px/2 "Microsoft Yahei";
+    }
+
+    .bold { 
+        font-weight: bold; 
+    }
+
+    .post-donate a {
+        border-bottom: 0px;
+    }
+
+    #donate_guide table {
+        border: none;
+    }
+
+    #donate_guide td {
+        border-bottom: none;
+        border-right: none;
+        background: #333333;
+        valign: top;
+    }
+
+</style>
+
+
+
+      
+    </div>
+
+    <div class="post-spread">
+      
+        <div class="bdsharebuttonbox">
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+	<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+</div>
+<script>
+    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+          <div class="comments" id="comments">
+            
+              <div id="disqus_thread">
+                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
+            <!--
+            
+            -->
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="kZime" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">kZime</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">自己选择的路...</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-next-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://github.com/kZime" target="_blank">GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/shang-di-zhi-li/activities" target="_blank">ZhiHu</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://music.163.com/#/user/home?id=83525825" target="_blank">YunMusic</a>
+              </span>
+            
+          
+        </div>
+
+        <div class="links-of-friendly motion-element">
+          
+            <p class="site-author-name">dalao们</p>
+            
+              <span class="links-of-author-item">
+              <a href="https://blog.lcybox.com/" target="_blank">ChenYao</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.xtybox.com/" target="_blank">XTT</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://blog.csdn.net/wmdcstdio/" target="_blank">cstdio</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://fancypei.github.io/" target="_blank">Fancy</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://sxysxy.org/" target="_blank">sxysxy</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://tys.design/" target="_blank">TYS</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://jjq0811.com/" target="_blank">JJQ</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://dengspg.icoc.in/" target="_blank">DCH</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://justwb13.github.io/" target="_blank">WB</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://wanzzhehe.github.io/" target="_blank">WZZ</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.cnblogs.com/wahahaljy/" target="_blank">WAHAHA</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.wingsec.win/" target="_blank">WH</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.saruka.studio/" target="_blank">SARUKA</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://worldframe.top/" target="_blank">MCCC</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://104.224.165.219/" target="_blank">Entertainer</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HAOI2014-遥感监测"><span class="nav-number">1.</span> <span class="nav-text">[HAOI2014]遥感监测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入格式"><span class="nav-number">1.2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出格式"><span class="nav-number">1.3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样例输入"><span class="nav-number">1.4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#样例输出"><span class="nav-number">1.5.</span> <span class="nav-text">样例输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约束条件"><span class="nav-number">1.6.</span> <span class="nav-text">约束条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.7.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">1.8.</span> <span class="nav-text">代码实现</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2017
+  </span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kZime
+  </span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme by <a class="theme-link" href="http://blog.idhyt.com">idhyt</a>.<a class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp">Mala</a>
+</div>
+
+<!-- busuanzi -->
+
+  <div class="busuanzi-info">
+    <div class="theme-info">
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+    <span id="busuanzi_container_site_pv">
+        本站总访问量<a class="theme-link"><span id="busuanzi_value_site_pv"></span></a>次
+    </span>
+</div>
+  </div>
+
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  <script type="text/javascript">
+    var disqus_shortname = 'kzime';
+    var disqus_identifier = '2017/03/27/ha14摇杆监测/';
+    var disqus_title = 'HAOI2014遥感监测题解';
+    var disqus_url = 'http://kzime.xyz/2017/03/27/ha14摇杆监测/';
+
+    function run_disqus_script(disqus_script){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }
+
+    run_disqus_script('count.js');
+    
+      run_disqus_script('embed.js');
+    
+  </script>
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+  
+    <script type="text/javascript" color="157,157,157" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</body>
+</html>
