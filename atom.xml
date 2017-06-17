@@ -1,283 +1,278 @@
-
-<!doctype html>
-<html class="theme-next use-motion theme-next-mala">
-<head>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>kZime&#39;s blog</title>
+  <subtitle>kZime</subtitle>
+  <link href="/atom.xml" rel="self"/>
   
-
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-  <meta name="google-site-verification" content="9KSJHwRk-w65aBEuVrJHaNkOSgPnak9oIC4bpY7OIj8" />
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="自己选择的路..." />
-
-
-
-  <meta name="keywords" content="HAOI," />
-
-
-
-  <link rel="alternate" href="/atom.xml" title="kZime's blog" type="application/atom+xml" />
-
-
-
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
-
-
-<meta name="description" content="HAOI2013   的特点  题水  谁说的。。。做了大半年的题你跟我说水。。。欸，似乎真的很水。。。大概是我太水吧。。。  T1 [HAOI2013] 跑步训练题目描述 Dr.Kong准备参加冬季越野比赛。为了能在比赛中有好的发挥，他决定每天早上上班前在附近的一条山路上开始训练。他当然希望每次训练中跑得尽可能远，但他的时间有限，每天早上跑步训练的时间不得超过M秒 (1 &amp;lt;= M &amp;lt;">
-<meta name="keywords" content="HAOI">
-<meta property="og:type" content="article">
-<meta property="og:title" content="HAOI2013题解">
-<meta property="og:url" content="http://kzime.xyz/2017/03/20/HAOI2013题解/index.html">
-<meta property="og:site_name" content="kZime&#39;s blog">
-<meta property="og:description" content="HAOI2013   的特点  题水  谁说的。。。做了大半年的题你跟我说水。。。欸，似乎真的很水。。。大概是我太水吧。。。  T1 [HAOI2013] 跑步训练题目描述 Dr.Kong准备参加冬季越野比赛。为了能在比赛中有好的发挥，他决定每天早上上班前在附近的一条山路上开始训练。他当然希望每次训练中跑得尽可能远，但他的时间有限，每天早上跑步训练的时间不得超过M秒 (1 &amp;lt;= M &amp;lt;">
-<meta property="og:image" content="http://218.28.19.228/upload/image/20170320/20170320172631_36113.png">
-<meta property="og:image" content="http://218.28.19.228/upload/image/20170326/20170326223806_54672.png">
-<meta property="og:updated_time" content="2017-05-03T15:15:33.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HAOI2013题解">
-<meta name="twitter:description" content="HAOI2013   的特点  题水  谁说的。。。做了大半年的题你跟我说水。。。欸，似乎真的很水。。。大概是我太水吧。。。  T1 [HAOI2013] 跑步训练题目描述 Dr.Kong准备参加冬季越野比赛。为了能在比赛中有好的发挥，他决定每天早上上班前在附近的一条山路上开始训练。他当然希望每次训练中跑得尽可能远，但他的时间有限，每天早上跑步训练的时间不得超过M秒 (1 &amp;lt;= M &amp;lt;">
-<meta name="twitter:image" content="http://218.28.19.228/upload/image/20170320/20170320172631_36113.png">
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var CONFIG = {
-    scheme: 'Mala',
-    sidebar: 'post'
-  };
-</script>
-
-  <title> HAOI2013题解 | kZime's blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+  <link href="http://kzime.xyz/"/>
+  <updated>2017-06-17T01:49:46.337Z</updated>
+  <id>http://kzime.xyz/</id>
   
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'xxx', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?7f98f1f8c73489fb85b3d53df668e211";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-  <div class="container one-column page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">kZime</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
+  <author>
+    <name>kZime</name>
+    
+  </author>
   
-
+  <generator uri="http://hexo.io/">Hexo</generator>
   
-    <ul id="menu" class="menu menu-left">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            <i class="menu-item-icon icon-next-about"></i> <br />
-            关于
-          </a>
-        </li>
-      
-
-      
-      
-    </ul>
+  <entry>
+    <title>test</title>
+    <link href="http://kzime.xyz/2017/06/17/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://kzime.xyz/2017/06/17/测试/</id>
+    <published>2017-06-17T01:48:55.000Z</published>
+    <updated>2017-06-17T01:49:46.337Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(&quot;Hello, World!\n&quot;);</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+    
+    </summary>
+    
+    
+  </entry>
   
-
+  <entry>
+    <title>zkw线段树！！！</title>
+    <link href="http://kzime.xyz/2017/05/08/zkw/"/>
+    <id>http://kzime.xyz/2017/05/08/zkw/</id>
+    <published>2017-05-08T11:03:13.000Z</published>
+    <updated>2017-05-25T01:06:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="ZKW线段树！！！"><a href="#ZKW线段树！！！" class="headerlink" title="ZKW线段树！！！"></a>ZKW线段树！！！</h3><blockquote>
+<p>出处 :  <a href="https://wenku.baidu.com/view/0c1bbba40029bd64783e2cca.html" target="_blank" rel="external">统计的力量</a> by THU张昆玮</p>
+</blockquote>
+<p>跟普通线段树的区别：</p>
+<ol>
+<li><p>非递归调用， 常数小</p>
+</li>
+<li><p>堆式满二叉树储存，是点树</p>
+</li>
+<li>信息向上传递</li>
+</ol>
+<p>大概来一张图来表现普通线段树与zkw<del>重口味</del>线段树的储存方式的差距。  </p>
+<p>这个是普通的线段树<br><img src="http://218.28.19.228/upload/image/20170508/20170508210030_47649.bmp" alt="普通线段树"><br>zkw线段树<br><img src="http://218.28.19.228/upload/image/20170508/20170508210047_69213.bmp" alt="zkw线段树"></p>
+<blockquote>
+<p><del>qwq有没有dalao安利我绘图工具啊，windows自带画板快把强迫症逼死了啊啊啊啊啊</del></p>
+</blockquote>
+<p>是不是非常的简单明了==<br>反正就是能够发现，你可以很快的找到叶子节点的位置<br>作为二叉树，线段树的标号是这样的<br><img src="http://img.blog.csdn.net/20160326214437351" alt="二叉树"><br>转换成二进制之后是这样的<br><img src="http://img.blog.csdn.net/20160326214557758" alt="二进制"><br>很显然nd[x]的父亲节点是nd[x &gt;&gt; 1], 而nd[x]的两个儿子节点的标号分别是nd[x &lt;&lt; 1]和nd[x &lt;&lt; 1 | 1].  </p>
+<p>接下来是求区间和的各个操作的演示代码</p>
+<h4 id="inline-void-build"><a href="#inline-void-build" class="headerlink" title="inline void build()"></a>inline void build()</h4><p>建树十分简单<br><strong>PS</strong>: 为了保证叶子节点都在同一层，必须保证最后一层的节点数量是大于n的最小的2的幂，也就是代码中的M<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">push_up</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123; <span class="comment">// 上传过程</span></div><div class="line">    nd[x] = nd[x &lt;&lt; <span class="number">1</span>] + nd[x &lt;&lt; <span class="number">1</span> | <span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">while</span>(M &lt;= n + <span class="number">1</span>) &#123; <span class="comment">// M可以等于n 所以要M &lt;= n + 1</span></div><div class="line">        M &lt;&lt;= <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = M + <span class="number">1</span>; i &lt;= M + n; i++) &#123; <span class="comment">// 处理叶子节点</span></div><div class="line">        nd[i] = get_num();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = M; i &gt;= <span class="number">1</span>; i--) &#123; <span class="comment">// 处理父节点</span></div><div class="line">        push_up(i);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>叶子节点所在的层上的节点数为M， 叶子结点之前的节点数也是M，然后更新过程就可以这样的优美</p>
+<h4 id="inline-void-change-one-point-int-x-int-k"><a href="#inline-void-change-one-point-int-x-int-k" class="headerlink" title="inline void change_one_point(int x, int k)"></a>inline void change_one_point(int x, int k)</h4><p>单点修改的过程也是十分的简单， 只需要找到要修改的值所在的叶子节点，更新之后一路往上传就行, 时间复杂度O(logn)<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">change_one_point</span><span class="params">(<span class="keyword">int</span> x , <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">    x += M;</div><div class="line">	nd[x] += k;</div><div class="line">    <span class="keyword">for</span>(x &gt;&gt;= <span class="number">1</span>; x; x &gt;&gt;= <span class="number">1</span>) &#123;</div><div class="line">        push_up(x);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="inline-void-change-section-int-l-int-r-int-k"><a href="#inline-void-change-section-int-l-int-r-int-k" class="headerlink" title="inline void change_section(int l, int r, int k)"></a>inline void change_section(int l, int r, int k)</h4><p><del>这是个坑，暂时不解决</del></p>
+<h4 id="inline-int-query-int-l-int-r"><a href="#inline-int-query-int-l-int-r" class="headerlink" title="inline int query(int l, int r)"></a>inline int query(int l, int r)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(l = M + l - <span class="number">1</span>, r = M + r + <span class="number">1</span>; l ^ r ^ <span class="number">1</span>; l &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>) &#123; <span class="comment">// l = M + l - 1, r = M + r + 1, 意思是将l 和 r 变成开区间，l ^ r ^ 1  --&gt;  not l ^ r == 1  --&gt;  l 和 r不是同一节点的两个子节点</span></div><div class="line">        <span class="keyword">if</span>(~l &amp; <span class="number">1</span>) ans += nd[l + <span class="number">1</span>];<span class="comment">// l是左子区间                       </span></div><div class="line">        <span class="keyword">if</span>(r &amp; <span class="number">1</span>) ans += nd[r - <span class="number">1</span>]; <span class="comment">// r是右子区间                       </span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>一大坨毒瘤的位运算。。。<br>每个位运算的意思都在代码里解释了，如果还是感觉毒瘤可以尝试看看zkw论文里的伪代码<br><img src="http://218.28.19.228/upload/image/20170508/20170508190124_55300.png" alt="区间查询"></p>
+<h4 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…"></a>未完待续…</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;ZKW线段树！！！&quot;&gt;&lt;a href=&quot;#ZKW线段树！！！&quot; class=&quot;headerlink&quot; title=&quot;ZKW线段树！！！&quot;&gt;&lt;/a&gt;ZKW线段树！！！&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;出处 :  &lt;a href=&quot;https://wenku.
+    
+    </summary>
+    
+      <category term="数据结构" scheme="http://kzime.xyz/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="线段树" scheme="http://kzime.xyz/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+  </entry>
   
-    <div class="site-search">
-      
+  <entry>
+    <title>博客重建</title>
+    <link href="http://kzime.xyz/2017/05/04/hello-world/"/>
+    <id>http://kzime.xyz/2017/05/04/hello-world/</id>
+    <published>2017-05-04T08:42:26.000Z</published>
+    <updated>2017-05-04T09:13:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为自己乱搞Ubuntu，在Ubuntu下进行了一些类似于  </p>
+<blockquote>
+<p>cd /<br>sudo rm -rf</p>
+</blockquote>
+<p>的错误操作，<br>导致Ubuntu系统崩盘，顺带清了一个盘<br>甚至电脑启动不了了几次<br>磁盘恢复就恢复出来几篇文章，剩下的还有自己去网上抠。。<br>惨死。。</p>
+<p>嗯，就假装是一次博客升级吧，恢复文章的过程还顺便去fock了别人的一个主题，<br>估计是码代码时候熟悉黑色背景了，这款主题也是看着很舒服，也算很开心吧。<br>这次集训我在课余时间重装了数十次Ubuntu，虽然很崩溃吧，但是学到了很多， 还搞到了一个非常爽的编辑器<strong><em>atom</em></strong>， 强推。<br><strong><em>震惊！kZime看了之后连Vim都弃了！  </em></strong></p>
+<p>就是这种感觉。 Vim虽然有着很棒的码代码的手感，但编译，调试时甚是麻烦，而且代码补全插件我一直搞不好qwq，就很气，但<strong><em>atom</em></strong>不仅手感好，各种插件也做的很方便。有一个小细节我要点个赞，之前不管是devc还是vim，关于编码方面都处理的不是太好，vim还行，认死一个UTF-8就够了，但devc会把UTF-8的代码注释弄成乱码，在devc是的代码注释移动到vim又成乱码了，notepad++在这块做的还好，至少可以很方便的转换编码。<strong><em>atom</em></strong>而可以直接在编辑器右下角调成自动选择编码模式，这样就很爽了。而且atom作为github的产品，开源免费是必须的，还可以直接在atom呢下载github上的插件，主题。vim模式插件不用说，连Emacs插件也有。还有强大的自定义功能，加上几个插件， 就可以说是IDE了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;因为自己乱搞Ubuntu，在Ubuntu下进行了一些类似于  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cd /&lt;br&gt;sudo rm -rf&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;的错误操作，&lt;br&gt;导致Ubuntu系统崩盘，顺带清了一个盘&lt;br&gt;甚至电脑启动不了了几
+    
+    </summary>
+    
+      <category term="blog" scheme="http://kzime.xyz/categories/blog/"/>
+    
+    
+  </entry>
   
-  <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'xxx','2.0.0');
-</script>
-
-
-
-    </div>
+  <entry>
+    <title>CF#410div2</title>
+    <link href="http://kzime.xyz/2017/04/22/CF-410div2/"/>
+    <id>http://kzime.xyz/2017/04/22/CF-410div2/</id>
+    <published>2017-04-22T00:18:51.000Z</published>
+    <updated>2017-04-22T00:53:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。</p>
+<p><strong>真心祝愿MK学长省选进队！！</strong>（不是奶</p>
+<p>明天就是省选了    </p>
+<blockquote>
+<p>JLOI, HEOI, HLOI, SHOI, SNOI, HAOI, SXOI, FJOI, LNOI, GZOI</p>
+</blockquote>
+<p><strong><em>BLESS ALL</em></strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>(<span class="literal">true</span>) RP++;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。&lt;/
+    
+    </summary>
+    
+    
+      <category term="比赛" scheme="http://kzime.xyz/tags/%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
   
-</nav>
-
- </div>
-    </header>
+  <entry>
+    <title>HAOI2017游记</title>
+    <link href="http://kzime.xyz/2017/04/22/HAOI2017/"/>
+    <id>http://kzime.xyz/2017/04/22/HAOI2017/</id>
+    <published>2017-04-22T00:18:51.000Z</published>
+    <updated>2017-05-04T10:16:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>OI生涯经历的第一场省选，惨烈无比<br>纪念syz18界学长 XTT, TYS, DCH<br>ssy18界学长学姐 MK, KZNS, 农场主， 克泽风，</p>
+<hr>
+<h3 id="DAY-7"><a href="#DAY-7" class="headerlink" title="DAY -7"></a>DAY -7</h3><p>  周日和一群dalao去参加轻院校赛，和wb，学长tys一队，队名很鬼畜。<br>  开考读题，直接把一道看上去很水的最短路D递给tys了，然后wb继续看题，我看着tys码spfa，感觉没什么问题犹豫了一下，提交了，直接RE，开门GG，心态全无，感觉是边数开小了，又交了一次，仍然RE。。慌得直接换题。然后我和wb讨论A题的三维坐标下点到直线的距离，推广不出来。换题，看到E题以为是个很简单的贪心，交给tys，打着打着突然感觉不对劲，少考虑好多影响（结束后问了才知道是个网络流。。。，考试中间评测服务器掉线，写了4道题，服务器上线后交完连WA带TLE加RE。。最后只A了两道题，带着狗牌走掉。天天队伍A了8道题，拿到了rk3，一中mjl两人队A8题rk2，mjl太强了aaaa…离开的时候发誓明年再来参加一定AK全场。<br>  比完赛跟着天天，省实验的人，一中的mjl去吃饭，看速8，然后跟ldl，KZ坐出租回家</p>
+<h3 id="DAY-6-3"><a href="#DAY-6-3" class="headerlink" title="DAY -6 ~ -3"></a>DAY -6 ~ -3</h3><p>  在省实验集训，每天上午都在实验内网考试，考到中文12点， 然后我就会和wb一起去学校对面碰碰凉要不是玩王者农药，要不是码代码，平均一次A一道最水的题吧。。考完两天突然把比赛放在192.168.1.12上了，用账户条登陆。然后就体验到省实验著名的颓废机房（233。老师讲的东西基本上听不懂。。。<br>  每天晚上10点去实验操场找粽子，和她散散步，聊聊天。。。开心</p>
+<h3 id="DAY-2-1"><a href="#DAY-2-1" class="headerlink" title="DAY -2 ~ -1"></a>DAY -2 ~ -1</h3><p>  白天日常，晚上刷CF，见前一篇博客。然后睡在机房，睡前和mk，zf聊了很多人，很多事，mk睡之前确定的说，感觉自己还是有很大机会进队的，自己很自信自己的水平。我们也希望mk能进队。<br>  日常，不过没比赛，今天wb没来实验，我写了写水题就跟着大家浮了起来，下午，机房里的人都去看考场或者订宾馆了，我见人少，就回家了。</p>
+<h3 id="DAY-0上午"><a href="#DAY-0上午" class="headerlink" title="DAY 0上午"></a>DAY 0上午</h3><p>  早上去郑大找不到考场在哪，转了好几圈，我qq问mjl知道不知道在哪，他也表示懵逼。然后突然在路上发现一只野生的天天，就直接跟着他跑了，找到之后给mjl说考场在哪。（后来看他博客知道他是考前5分钟进的考场。<br>  到考场时已经有点晚了，赶快准备准备环境，安装安装IDE， 突然在D盘资源文件夹里看到了个smartc。我直接喊了一句woc，这玩意我前天在省实验集训的时候才在网上见过，内含各种模板，之前我还玩了半天模板里的游戏。我打开翻了翻，发现里面的代码模板没有被清除，立马预见到这次HAOI又改有问题了。。<br>  t1刚拿到的时候感觉是跟强连通分量，双联通分量什么的有关，但又没思路，就直接码暴力。码到一半脑补出了一个我解决不了的样例，对暴力的正确性产生了怀疑。然后直接放弃，t2直接按照题面意思码一个暴力出来。t3有3种操作，其中只有第一种操作就能过6个点，当时时间也不太够了，直接码起异或版spfa。但是因为样例抄错了耽误了很多时间。码完还剩两分钟玩起了smartc里的俄罗 斯方块。</p>
+<h3 id="DAY-0下午"><a href="#DAY-0下午" class="headerlink" title="DAY 0下午"></a>DAY 0下午</h3><p>  出来之后表示大家写的都是暴力，心态还好。但是TYS专注码t2后缀数组，因为记错一个变量名爆零，其它题一点没码。听我说smartc上有后缀数组的模板后直接个ccf发了封邮件。<br>  下午t1看出来是个DP了，但是题面看不太明白，就先把t2的20分暴力码了，然后t1还是看不懂，就各种玩。电脑里有啥玩啥。<br>  考完mk说感觉自己要擦线进队了。<br>  天天，sxy和杨老师留在那等结果，我们直接回学校，回家。<br>  回家睡到7点回学校。</p>
+<h3 id="DAY-1"><a href="#DAY-1" class="headerlink" title="DAY 1"></a>DAY 1</h3><p>  空间被mjl刷屏了，似乎评测用的lemon内存设置出问题了，好多人mle掉。又有人说下午t1数据太水，不考虑障碍情况的裸dp就过了8个点，然后这几天就各种申诉。在学校学文化课，偶尔会机房码题。</p>
+<h3 id="DAY-3"><a href="#DAY-3" class="headerlink" title="DAY 3"></a>DAY 3</h3><p>  成绩出了mjl rk3强势进队，焦作一中进来3个，安阳一中进了2个，郑州一中进了2个。郑州一中的两个里还都是高一的。Rapiz被学弟擦线挤出队，rk8。省实验没有进队，其中农场主考的最高，mk也没有成功。。<br>  zsb下午t1裸dp过了8个点，120分，sxydalao110分，不知道会不会买D进队，TYS上午爆零，下午拿了90分，拿到一等，我60分，rk23，差1个点一等。。。wb，wzz爆零，天天学长。。爆零。<br>  不知道为什么，本来最有希望，最强的天天爆零了。好像因为函数名写错，文件读入输出写错。。。但感觉好可惜。<br>  然后后面的几天都没看到天天。</p>
+<h3 id="DAY-5"><a href="#DAY-5" class="headerlink" title="DAY 5"></a>DAY 5</h3><p>  省选风波过去了，本来想着OI可以放一放了，学校开了运动会，mjl去济南集训了，cogs上一个邯郸一中的好友也问我要不要去济南，我就自己一人出发了，走上了自己的路。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OI生涯经历的第一场省选，惨烈无比&lt;br&gt;纪念syz18界学长 XTT, TYS, DCH&lt;br&gt;ssy18界学长学姐 MK, KZNS, 农场主， 克泽风，&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;DAY-7&quot;&gt;&lt;a href=&quot;#DAY-7&quot; class=&quot;headerlin
+    
+    </summary>
+    
+    
+      <category term="比赛" scheme="http://kzime.xyz/tags/%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF#408div2</title>
+    <link href="http://kzime.xyz/2017/04/11/CF-408div2/"/>
+    <id>http://kzime.xyz/2017/04/11/CF-408div2/</id>
+    <published>2017-04-10T18:55:51.000Z</published>
+    <updated>2017-04-10T19:06:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次在晚上熬夜打CF，虽然准备的很充足，但还是只A了两道模拟，其中B题还被HACK掉了一次。。。经过mly的指点才把HACK点改掉，然后就是C，刚开始没思路，dalao们确认贪心可做之后就开始瞎JB贪了起来，然后WAWAWAWAWA。。。。<br>结果rating–<br>瘫</p>
+<p>多做题吧，骚年</p>
+<p>QAQ</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第一次在晚上熬夜打CF，虽然准备的很充足，但还是只A了两道模拟，其中B题还被HACK掉了一次。。。经过mly的指点才把HACK点改掉，然后就是C，刚开始没思路，dalao们确认贪心可做之后就开始瞎JB贪了起来，然后WAWAWAWAWA。。。。&lt;br&gt;结果rating–&lt;br
+    
+    </summary>
+    
+    
+      <category term="比赛" scheme="http://kzime.xyz/tags/%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HAOI2014遥感监测题解</title>
+    <link href="http://kzime.xyz/2017/03/27/ha14%E6%91%87%E6%9D%86%E7%9B%91%E6%B5%8B/"/>
+    <id>http://kzime.xyz/2017/03/27/ha14摇杆监测/</id>
+    <published>2017-03-27T07:06:26.000Z</published>
+    <updated>2017-05-03T14:56:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HAOI2014-遥感监测"><a href="#HAOI2014-遥感监测" class="headerlink" title="[HAOI2014]遥感监测"></a><a href="#HAOI2014-遥感监测" title="[HAOI2014]遥感监测"></a><a href="http://cogs.pro/cogs/problem/problem.php?pid=1679" target="_blank" rel="external">[HAOI2014]遥感监测</a></h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="#题目描述" title="题目描述"></a>题目描述</h2><blockquote>
+<p>外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。<br><a id="more"></a><br>ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的发现。ZDM-99星球表面有着明显的明暗变化。对这些明暗区域，天文学家们已经细致地研究了很多年，并且绘制出了较为详尽的地图，那些暗区是陆地，而亮区则是湖泊和海洋。他们一直坚信有水的地方，一定有生命的痕迹。</p>
+<p>这天晚上的观测条件实在是空前的好，ZDM-99星球也十分明亮，不时呈现出若干个激光点，天文学家们推定这些激光点极有可能存在地球以外的智慧生命。遗憾的是仅持续很短的一段时间，这些激光点就消失了。</p>
+<p>ZDM实验室的射电望远镜观测的区域有限，只可以遥感检测到一个半径为R的圆形区域。为了能同时能检测到所有的激光点，ZDM实验室需要要在一个水平的直线上尽快地安装多个的射电望远镜来。</p>
+<p>不妨设，这条安放射电望远镜的水平直线为X轴，ZDM-99星球激光点就处在P1（x1,y1）P2(x2,y2)  ，…… ，Pn(xn,yn)。（忽略Z坐标）<br><a href="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png" target="_blank" rel="external"><img src="http://218.28.19.228/upload/image/20140718/20140718164645_17219.png" alt=""></a><br>ZDM实验室的天文学家们想知道，至少需要安装多少个射电望远镜才能检测到所有激光点。</p>
+</blockquote>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a><a href="#输入格式" title="输入格式"></a>输入格式</h2><blockquote>
+<p>第1行:  N   R   分别表示激光点的个数和射电望远镜能检测到的半径<br>第2~N+1行： Xi  Yi      表示 激光点的坐标位置</p>
+</blockquote>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a><a href="#输出格式" title="输出格式"></a>输出格式</h2><blockquote>
+<p>输出一行： 最少需要安装的射电望远镜数。</p>
+</blockquote>
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a><a href="#样例输入" title="样例输入"></a>样例输入</h2><blockquote>
+<p>3 2<br>1 2<br>-3 1<br>2 1</p>
+</blockquote>
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a><a href="#样例输出" title="样例输出"></a>样例输出</h2><blockquote>
+<p>2</p>
+</blockquote>
+<h2 id="约束条件"><a href="#约束条件" class="headerlink" title="约束条件"></a><a href="#约束条件" title="约束条件"></a>约束条件</h2><blockquote>
+<p>1≤R≤50     1≤N≤100   -1000≤ Xi  Yi ≤ 1000     | Yi | ≤ R<br>N，R, Xi  Yi都是整数。数据之间有一个空格。</p>
+</blockquote>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a><a href="#题解" title="题解"></a>题解</h2><p>大概是个贪心，找出能保证包住最靠左的激光点的最靠右边的x轴坐标，但是枚举所以点时间复杂度明显太高，所以换一种思路，使用结构体处理出每个激光点所能被包住的可以作为望远镜的可行区间</p>
+<p><a href="http://218.28.19.228/upload/image/20170327/20170327094625_62844.png" target="_blank" rel="external"><img src="http://218.28.19.228/upload/image/20170327/20170327094625_62844.png" alt=""></a><br>处理方法很简单<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">	<span class="keyword">double</span> fan=<span class="built_in">sqrt</span>(<span class="built_in">pow</span>(r,<span class="number">2</span>)-<span class="built_in">pow</span>(p[i].y,<span class="number">2</span>));<span class="comment">//pow()是n次方函数pow(x,n)表示x的n次方</span></div><div class="line">	p[i].l=p[i].x-fan;</div><div class="line">	p[i].r=p[i].x+fan;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后对处理后的区间按照右端点进行排序(请同学们自主思考：为什么是右端点)然后进行统计<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> k=<span class="number">1</span>, ans=<span class="number">1</span>;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</div><div class="line">	<span class="keyword">if</span>(p[i].l&lt;=p[k].r)&#123;<span class="comment">//p[k].r点可观测到点i</span></div><div class="line">		<span class="keyword">continue</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span> &#123;<span class="comment">//更新k</span></div><div class="line">		k=i;</div><div class="line">		ans++;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>最后放一下全部代码</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a><a href="#代码实现" title="代码实现"></a>代码实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> ans,r,n;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="keyword">int</span> k=<span class="number">0</span>,f=<span class="number">1</span>;<span class="keyword">char</span> c=getchar();</div><div class="line">	<span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">	<span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">	<span class="keyword">return</span> k*f;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">mp</span>&#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="keyword">int</span> x;</div><div class="line">	<span class="keyword">int</span> y;</div><div class="line">	<span class="keyword">double</span> l;</div><div class="line">	<span class="keyword">double</span> r;</div><div class="line">&#125;p[<span class="number">2333</span>];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(mp a,mp b)</span></span>&#123;</div><div class="line">	<span class="keyword">return</span> a.r&lt;b.r;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	freopen(<span class="string">"ha14a.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"ha14a.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</div><div class="line">	n=read();</div><div class="line">	r=read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">		p[i].x=read();</div><div class="line">		p[i].y=read();</div><div class="line">		<span class="keyword">if</span>(<span class="built_in">abs</span>(p[i].y)&gt;r)&#123;</div><div class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="number">-1</span>;</div><div class="line">			<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</div><div class="line">		<span class="keyword">double</span> fan=<span class="built_in">sqrt</span>(<span class="built_in">pow</span>(r,<span class="number">2</span>)-<span class="built_in">pow</span>(p[i].y,<span class="number">2</span>));</div><div class="line">		p[i].l=p[i].x-fan;</div><div class="line">		p[i].r=p[i].x+fan;</div><div class="line">	&#125;</div><div class="line">	sort(p+<span class="number">1</span>,p+<span class="number">1</span>+n,cmp);</div><div class="line">	<span class="keyword">int</span> k=<span class="number">1</span>;</div><div class="line">	ans=<span class="number">1</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</div><div class="line">		<span class="keyword">if</span>(p[i].l&lt;=p[k].r)&#123;</div><div class="line">			<span class="keyword">continue</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">else</span> &#123;</div><div class="line">			k=i;</div><div class="line">			ans++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,ans);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HAOI2014-遥感监测&quot;&gt;&lt;a href=&quot;#HAOI2014-遥感监测&quot; class=&quot;headerlink&quot; title=&quot;[HAOI2014]遥感监测&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#HAOI2014-遥感监测&quot; title=&quot;[HAOI2014]遥感监测
+    
+    </summary>
+    
+      <category term="题解" scheme="http://kzime.xyz/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="HAOI" scheme="http://kzime.xyz/tags/HAOI/"/>
+    
+      <category term="贪心" scheme="http://kzime.xyz/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>纪念12Dora</title>
+    <link href="http://kzime.xyz/2017/03/25/12dora/"/>
+    <id>http://kzime.xyz/2017/03/25/12dora/</id>
+    <published>2017-03-25T07:11:32.000Z</published>
+    <updated>2017-05-04T08:40:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>“我所做的一切都是为了守护我亲爱的B站”。<br>        ———— 12dora</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“我所做的一切都是为了守护我亲爱的B站”。&lt;br&gt;        ———— 12dora&lt;/p&gt;
 
     
-      
-
-      
-
+    </summary>
     
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div id="content" class="content"> 
-
-  <div id="posts" class="posts-expand">
+      <category term="随笔" scheme="http://kzime.xyz/categories/%E9%9A%8F%E7%AC%94/"/>
     
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              HAOI2013题解
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2017-03-20T15:06:26+08:00" content="2017-03-20">
-            2017-03-20
-          </time>
-        </span>
-
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/题解/" itemprop="url" rel="index">
-                  <span itemprop="name">题解</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2017/03/20/HAOI2013题解/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/20/HAOI2013题解/" itemprop="commentsCount"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        <span itemprop="articleBody"><p>HAOI2013   的特点</p>
+    
+  </entry>
+  
+  <entry>
+    <title>HAOI2013题解</title>
+    <link href="http://kzime.xyz/2017/03/20/HAOI2013%E9%A2%98%E8%A7%A3/"/>
+    <id>http://kzime.xyz/2017/03/20/HAOI2013题解/</id>
+    <published>2017-03-20T07:06:26.000Z</published>
+    <updated>2017-05-03T15:15:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>HAOI2013   的特点</p>
 <blockquote>
 <p><del>题水</del></p>
 </blockquote>
@@ -346,601 +341,133 @@
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a><a href="#代码" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*kZime*/</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>; <span class="keyword">char</span> c = getchar();</div><div class="line">	<span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getchar())<span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">	<span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getchar()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">	<span class="keyword">return</span> k * f;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*-----------------------------------------------------------------------------*/</span></div><div class="line"><span class="keyword">int</span> n, m;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">segtree</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">	<span class="keyword">int</span> l, r, lm, rm, m, mp, tag; <span class="comment">//mp指的是最长区间的起始位置</span></div><div class="line">	segtree() &#123;</div><div class="line">		tag = <span class="number">-1</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">void</span> <span class="title">in</span><span class="params">(<span class="keyword">int</span> _l, <span class="keyword">int</span> _r, <span class="keyword">int</span> _ml, <span class="keyword">int</span> _mr, <span class="keyword">int</span> _m, <span class="keyword">int</span> _mp, <span class="keyword">int</span> _tag)</span> </span>&#123;</div><div class="line">		l = _l;</div><div class="line">		r = _r;</div><div class="line">		lm = _ml;</div><div class="line">		rm = _mr;</div><div class="line">		m = _m;</div><div class="line">		mp = _mp;</div><div class="line">		tag = _tag;</div><div class="line">	&#125;</div><div class="line">&#125;nd[<span class="number">300050</span>];</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span>(l == r) &#123;</div><div class="line">		nd[x].in(l, r, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, l, <span class="number">-1</span>);</div><div class="line"> 	&#125;</div><div class="line">	<span class="keyword">else</span> &#123;</div><div class="line">		<span class="keyword">int</span> mid = (l + r) / <span class="number">2</span>;</div><div class="line">		<span class="keyword">int</span> len = r - l + <span class="number">1</span>;</div><div class="line">		build(x &lt;&lt; <span class="number">1</span>, l, mid);</div><div class="line">		build(x &lt;&lt; <span class="number">1</span> | <span class="number">1</span>, mid + <span class="number">1</span>, r);</div><div class="line">		nd[x].in(l, r, len, len, len, l, <span class="number">-1</span>);</div><div class="line">  	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">push_down</span><span class="params">(<span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span>(nd[k].tag == <span class="number">1</span>) &#123;<span class="comment">//该区间已被占满</span></div><div class="line">		nd[k].lm = nd[k].rm = nd[k].m = nd[k].mp = <span class="number">-1</span>;</div><div class="line">		nd[k &lt;&lt; <span class="number">1</span>].tag = <span class="number">1</span>;</div><div class="line">		nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].tag = <span class="number">1</span>;</div><div class="line">		nd[k].tag = <span class="number">-1</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(nd[k].tag == <span class="number">0</span>) &#123;<span class="comment">//该区间为空区间</span></div><div class="line">		nd[k &lt;&lt; <span class="number">1</span>].tag = nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].tag = <span class="number">0</span>;</div><div class="line">		nd[k].lm = nd[k].rm = nd[k].m = (nd[k].r - nd[k].l + <span class="number">1</span>);</div><div class="line">		nd[k].mp = nd[k].l;</div><div class="line">		nd[k].tag = <span class="number">-1</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">push_up</span><span class="params">(<span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">	push_down(k);</div><div class="line">	push_down(k &lt;&lt; <span class="number">1</span>);</div><div class="line">	push_down(k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>);</div><div class="line">	<span class="keyword">int</span> x1 = nd[k &lt;&lt; <span class="number">1</span>].m , x2 = nd[k &lt;&lt; <span class="number">1</span>].rm + nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].lm, x3 = nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].m;</div><div class="line">	<span class="keyword">if</span>(x1 &gt;= x2 &amp;&amp; x1 &gt;= x3) &#123;         <span class="comment">// 注意！！！这三个判断是有优先级的</span></div><div class="line">		nd[k].m = x1;                  <span class="comment">// 优先级 x1 &gt; x2 &gt; x3</span></div><div class="line">		nd[k].mp = nd[k &lt;&lt; <span class="number">1</span>].mp;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(x2 &gt;= x3) &#123;</div><div class="line">		nd[k].m = x2;</div><div class="line">		nd[k].mp = nd[k &lt;&lt; <span class="number">1</span>].r - nd[k &lt;&lt; <span class="number">1</span>].rm + <span class="number">1</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span> &#123;</div><div class="line">		nd[k].m = x3;</div><div class="line">		nd[k].mp = nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].mp;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">int</span> lenl = nd[k &lt;&lt; <span class="number">1</span>].r - nd[k &lt;&lt; <span class="number">1</span>].l + <span class="number">1</span>;</div><div class="line">	<span class="keyword">int</span> lenr = nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].r - nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].l + <span class="number">1</span>;</div><div class="line">	nd[k].lm = nd[k &lt;&lt; <span class="number">1</span>].lm;</div><div class="line">	<span class="keyword">if</span>(nd[k &lt;&lt; <span class="number">1</span>].lm == lenl) &#123;</div><div class="line">		nd[k].lm = max(nd[k].lm, nd[k &lt;&lt; <span class="number">1</span>].lm + nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].lm);<span class="comment">//一定要用max()函数，被占区间的rm可能为-1</span></div><div class="line">	&#125;</div><div class="line">    nd[k].rm = nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].rm;</div><div class="line">	<span class="keyword">if</span>(nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].rm == lenr) &#123;</div><div class="line">		nd[k].rm = max(nd[k].rm, nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].rm + nd[k &lt;&lt; <span class="number">1</span>].rm);    </div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">query</span><span class="params">()</span> </span>&#123;</div><div class="line">	push_down(<span class="number">1</span>);</div><div class="line">	<span class="keyword">return</span> nd[<span class="number">1</span>].m;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">get_the_smallest_mp</span> <span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> len)</span> </span>&#123;</div><div class="line">	push_down(k);</div><div class="line">	<span class="keyword">if</span>(nd[k].m &lt; len) <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(nd[k].lm &gt;= len) <span class="keyword">return</span> nd[k].l;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(nd[k &lt;&lt; <span class="number">1</span>].m &gt;= len) <span class="keyword">return</span> get_the_smallest_mp(k &lt;&lt; <span class="number">1</span>, len);</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (nd[k &lt;&lt; <span class="number">1</span>].rm &gt;= <span class="number">0</span> &amp;&amp; nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].lm &gt;= <span class="number">0</span> &amp;&amp; nd[k &lt;&lt; <span class="number">1</span>].rm + nd[k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>].lm &gt;= len) <span class="keyword">return</span> (nd[k &lt;&lt; <span class="number">1</span>].r - nd[k &lt;&lt; <span class="number">1</span>].rm + <span class="number">1</span>);</div><div class="line">	<span class="keyword">else</span> <span class="keyword">return</span> get_the_smallest_mp(k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>, len);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">change</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> l, <span class="keyword">int</span> r, <span class="keyword">int</span> tag)</span> </span>&#123;  <span class="comment">//更新区间</span></div><div class="line">	push_down(k);</div><div class="line">	<span class="keyword">if</span>(l &lt;= nd[k].l &amp;&amp; nd[k].r &lt;= r) &#123;</div><div class="line">		nd[k].tag = tag;</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(l &gt; nd[k].r || r &lt; nd[k].l) &#123;</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	change(k &lt;&lt; <span class="number">1</span>, l, r, tag);</div><div class="line">	change(k &lt;&lt; <span class="number">1</span> | <span class="number">1</span>, l, r, tag);</div><div class="line">	push_up(k);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MYLAB</span></div><div class="line">	freopen(<span class="string">"haoi13t4.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"haoi13t4.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line"><span class="meta">#<span class="meta-keyword">else</span></span></div><div class="line">	freopen(<span class="string">"in.txt"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div><div class="line">	n = read();</div><div class="line">	m = read();</div><div class="line"></div><div class="line">	build(<span class="number">1</span>, <span class="number">1</span>, n);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</div><div class="line">		<span class="keyword">int</span> type = read();</div><div class="line">		<span class="keyword">if</span>(type == <span class="number">1</span>) &#123;<span class="comment">//安装应用</span></div><div class="line">		    <span class="keyword">int</span> len = read();</div><div class="line">			<span class="keyword">if</span>(query() &lt; len) &#123;</div><div class="line">				<span class="built_in">printf</span>(<span class="string">"0\n"</span>);</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">else</span> &#123;</div><div class="line">				<span class="keyword">int</span> sm =get_the_smallest_mp(<span class="number">1</span>, len);</div><div class="line">				<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, sm);</div><div class="line">				change(<span class="number">1</span>, sm, sm + len - <span class="number">1</span>, <span class="number">1</span>);<span class="comment">//tag 1 表示占用该区间</span></div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">else</span> &#123;</div><div class="line">			<span class="keyword">int</span> x = read();</div><div class="line">			<span class="keyword">int</span> len = read();</div><div class="line">			change(<span class="number">1</span>, x, x + len - <span class="number">1</span>, <span class="number">0</span>);<span class="comment">//tag 0 清空该区间</span></div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="T5-HAOI2013-遥控器"><a href="#T5-HAOI2013-遥控器" class="headerlink" title="T5[HAOI2013] 遥控器"></a><a href="#T5-HAOI2013-遥控器" title="T5[HAOI2013] 遥控器"></a>T5<a href="http://cogs.pro/cogs/problem/problem.php?pid=1369" target="_blank" rel="external">[HAOI2013] 遥控器</a></h2><h3 id="解法-4"><a href="#解法-4" class="headerlink" title="解法"></a><a href="#解法-4" title="解法"></a>解法</h3><p>据说floyd也可以过，感觉好神奇，然而我打了一个模拟，要注意的细节很多<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*kZime*/</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>; <span class="keyword">char</span> c = getchar();</div><div class="line">	<span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getchar())<span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">	<span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getchar()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">	<span class="keyword">return</span> k * f;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*-----------------------------------------------------------------------------*/</span></div><div class="line"><span class="keyword">bool</span> num[<span class="number">10</span>], up, down, _, na[<span class="number">100</span>]; <span class="comment">// nc[i] （num cost）从x到i的最小代价</span></div><div class="line">							     	<span class="comment">// na[i] （num able）是否能到达i</span></div><div class="line"><span class="keyword">int</span> x, y, ans, nc[<span class="number">100</span>];</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt;= <span class="number">3</span>; i++) &#123;</div><div class="line">		num[i] = read();</div><div class="line">	&#125;</div><div class="line">	up = read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">4</span>; i &lt;= <span class="number">6</span>; i++) &#123;</div><div class="line">		num[i] = read();</div><div class="line">	&#125;</div><div class="line">	down = read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">7</span>; i &lt;= <span class="number">9</span>; i++) &#123;</div><div class="line">		num[i] = read();</div><div class="line">	&#125;</div><div class="line">	_ = read();</div><div class="line">	num[<span class="number">0</span>] = read();</div><div class="line">	x = read();</div><div class="line">	y = read();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">units</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">9</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span>(num[i]) &#123;</div><div class="line">			nc[i] = <span class="number">1</span>;</div><div class="line">			na[i] = <span class="number">1</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">tens</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span>(!_)<span class="keyword">return</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span>(num[i]) &#123;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">9</span>; j++) &#123;</div><div class="line">				<span class="keyword">if</span>(num[j]) &#123;</div><div class="line">					nc[i * <span class="number">10</span> + j] = <span class="number">3</span>;</div><div class="line">					na[i * <span class="number">10</span> + j] = <span class="number">1</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">dis_up</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;    <span class="comment">//从a一路up到b的代价</span></div><div class="line">	<span class="keyword">if</span>(b &gt;= a)<span class="keyword">return</span> b - a;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="number">100</span> + b - a;  <span class="comment">//up到99后回到0</span></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">dis_down</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;  <span class="comment">//从a一路down到b的代价</span></div><div class="line">	<span class="keyword">if</span>(a &gt;= b) <span class="keyword">return</span> a - b;</div><div class="line">	<span class="keyword">else</span> <span class="keyword">return</span> <span class="number">100</span> + a - b;  <span class="comment">//down到0后变成99</span></div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">try_num</span><span class="params">()</span> </span>&#123;              <span class="comment">//尝试从x直接到y</span></div><div class="line">	<span class="keyword">if</span>(na[y]) &#123;</div><div class="line">		ans = min(nc[y], ans);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">try_up</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span>(!up) <span class="keyword">return</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">99</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span>(na[i]) &#123;</div><div class="line">			ans = min(ans, nc[i] + dis_up(i, y));</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">try_down</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">if</span>(!down) <span class="keyword">return</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">99</span>; i++) &#123;</div><div class="line">		<span class="keyword">if</span>(na[i]) &#123;</div><div class="line">			ans = min(ans, nc[i] + dis_down(i, y));</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MYLAB</span></div><div class="line">	freopen(<span class="string">"HAOI2013T5.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">	freopen(<span class="string">"HAOI2013T5.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line"><span class="meta">#<span class="meta-keyword">else</span></span></div><div class="line">	freopen(<span class="string">"in.txt"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></div><div class="line">	ans = <span class="number">0x7fffffff</span>;</div><div class="line">	init();</div><div class="line">	units();</div><div class="line">	tens();</div><div class="line">	na[x] = <span class="number">1</span>;</div><div class="line">	nc[x] = <span class="number">0</span>;</div><div class="line">	try_num();</div><div class="line">	try_up();</div><div class="line">	try_down();</div><div class="line">	<span class="keyword">if</span>(ans == <span class="number">0x7fffffff</span>)<span class="built_in">printf</span>(<span class="string">"-1"</span>);</div><div class="line">	<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"%d"</span>, ans);</div><div class="line"></div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a><a href="#写在最后" title="写在最后"></a>写在最后</h2><p>话说模块化代码真爽啊</p>
-</span>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/HAOI/" rel="tag">#HAOI</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/25/12dora/" rel="prev">纪念12Dora</a>
-            
-          </div>
-
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/03/18/OI/" rel="next">OI</a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div>
-      
-        <style type="text/css">
-
-    .donate_bar {
-        text-align: center;
-        margin-top : 5%;
-    }
-
-    .donate_bar.hidden {
-        display:none;
-    }
-/*
-    .donate_bar a.btn_donate {
-        display: inline-block;
-        width: 82px;
-        height: 82px;
-        margin-left:auto;
-        margin-right:auto;
-
-        background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
-        _background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat; 
-
-        -webkit-transition: background 0s;
-        -moz-transition: background 0s;
-        -o-transition: background 0s;
-        -ms-transition: background 0s;
-        transition: background 0s;
-    }
-*/
-    .donate_bar a.btn_donate:hover { 
-        // background-position: 0px -82px;
-        color: #87daff
-    }
-
-    .donate_bar .donate_txt {
-        display: block;
-        color: #9d9d9d;
-        font: 14px/2 "Microsoft Yahei";
-    }
-
-    .bold { 
-        font-weight: bold; 
-    }
-
-    .post-donate a {
-        border-bottom: 0px;
-    }
-
-    #donate_guide table {
-        border: none;
-    }
-
-    #donate_guide td {
-        border-bottom: none;
-        border-right: none;
-        background: #333333;
-        valign: top;
-    }
-
-</style>
-
-
-
-      
-    </div>
-
-    <div class="post-spread">
-      
-        <div class="bdsharebuttonbox">
-	<a href="#" class="bds_more" data-cmd="more"></a>
-	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-	<a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-</div>
-<script>
-    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
-      
-    </div>
-  </div>
-
- </div>
-
-        
-          <div class="comments" id="comments">
-            
-              <div id="disqus_thread">
-                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-              </div>
-            <!--
-            
-            -->
-        
-      </div>
-
-      
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="kZime" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">kZime</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description">自己选择的路...</p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">13</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">5</span>
-              <span class="site-state-item-name">分类</span>
-              </a>
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">标签</span>
-              </a>
-          </div>
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="http://github.com/kZime" target="_blank">GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/shang-di-zhi-li/activities" target="_blank">ZhiHu</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://music.163.com/#/user/home?id=83525825" target="_blank">YunMusic</a>
-              </span>
-            
-          
-        </div>
-
-        <div class="links-of-friendly motion-element">
-          
-            <p class="site-author-name">dalao们</p>
-            
-              <span class="links-of-author-item">
-              <a href="https://blog.lcybox.com/" target="_blank">ChenYao</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://blog.xtybox.com/" target="_blank">XTT</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://blog.csdn.net/wmdcstdio/" target="_blank">cstdio</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="https://fancypei.github.io/" target="_blank">Fancy</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://sxysxy.org/" target="_blank">sxysxy</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://tys.design/" target="_blank">TYS</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://jjq0811.com/" target="_blank">JJQ</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://dengspg.icoc.in/" target="_blank">DCH</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="https://justwb13.github.io/" target="_blank">WB</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="https://wanzzhehe.github.io/" target="_blank">WZZ</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.cnblogs.com/wahahaljy/" target="_blank">WAHAHA</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.wingsec.win/" target="_blank">WH</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://www.saruka.studio/" target="_blank">SARUKA</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://worldframe.top/" target="_blank">MCCC</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="https://huangjiaming.com/" target="_blank">黄家面包</a>
-              </span>
-            
-              <span class="links-of-author-item">
-              <a href="http://margatroid.xyz/" target="_blank">Entertainer</a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator"></div>
-          <div class="post-toc">
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#T1-HAOI2013-跑步训练"><span class="nav-number">1.</span> <span class="nav-text">T1 [HAOI2013] 跑步训练</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式"><span class="nav-number">1.2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式"><span class="nav-number">1.3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入"><span class="nav-number">1.4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出"><span class="nav-number">1.5.</span> <span class="nav-text">样例输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法"><span class="nav-number">1.6.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贴代码"><span class="nav-number">1.7.</span> <span class="nav-text">贴代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T2-HAOI2013-花卉节"><span class="nav-number">2.</span> <span class="nav-text">T2[HAOI2013] 花卉节</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述-1"><span class="nav-number">2.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式-1"><span class="nav-number">2.2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式-1"><span class="nav-number">2.3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1"><span class="nav-number">2.4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1"><span class="nav-number">2.5.</span> <span class="nav-text">样例输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法-1"><span class="nav-number">2.6.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贴代码-1"><span class="nav-number">2.7.</span> <span class="nav-text">贴代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#低精50分版"><span class="nav-number">2.7.1.</span> <span class="nav-text">低精50分版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高精全A版"><span class="nav-number">2.7.2.</span> <span class="nav-text">高精全A版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#long-long-全A版"><span class="nav-number">2.7.3.</span> <span class="nav-text">long long 全A版</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T3-HAOI2013-开关控制"><span class="nav-number">3.</span> <span class="nav-text">T3[HAOI2013] 开关控制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述-2"><span class="nav-number">3.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式-2"><span class="nav-number">3.2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式-2"><span class="nav-number">3.3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2"><span class="nav-number">3.4.</span> <span class="nav-text">样例输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-2"><span class="nav-number">3.5.</span> <span class="nav-text">样例输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解法-2"><span class="nav-number">3.6.</span> <span class="nav-text">解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T4-HAOI2013-软件安装"><span class="nav-number">4.</span> <span class="nav-text">T4[HAOI2013] 软件安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解法-3"><span class="nav-number">4.1.</span> <span class="nav-text">解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.2.</span> <span class="nav-text">代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T5-HAOI2013-遥控器"><span class="nav-number">5.</span> <span class="nav-text">T5[HAOI2013] 遥控器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解法-4"><span class="nav-number">5.1.</span> <span class="nav-text">解法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写在最后"><span class="nav-number">6.</span> <span class="nav-text">写在最后</span></a></li></ol></div>
-            
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
-        </section>
-      
-
-    </div>
-  </aside>
-
-
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp; 
-  <span itemprop="copyrightYear">2017
-  </span>
-  <span class="with-love">
-    <i class="icon-next-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">kZime
-  </span>
-</div>
-
-<div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme by <a class="theme-link" href="http://blog.idhyt.com">idhyt</a>.<a class="theme-link" href="https://github.com/idhyt/hexo-theme-next/tree/magiclamp">Mala</a>
-</div>
-
-<!-- busuanzi -->
-
-  <div class="busuanzi-info">
-    <div class="theme-info">
-    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-    </script>
-    <span id="busuanzi_container_site_pv">
-        本站总访问量<a class="theme-link"><span id="busuanzi_value_site_pv"></span></a>次
-    </span>
-</div>
-  </div>
-
-
-
- </div>
-    </footer>
-
-    <div class="back-to-top"></div>
-  </div>
-
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
+]]></content>
     
-
-  <script type="text/javascript">
-    var disqus_shortname = 'kzime';
-    var disqus_identifier = '2017/03/20/HAOI2013题解/';
-    var disqus_title = 'HAOI2013题解';
-    var disqus_url = 'http://kzime.xyz/2017/03/20/HAOI2013题解/';
-
-    function run_disqus_script(disqus_script){
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }
-
-    run_disqus_script('count.js');
+    <summary type="html">
     
-      run_disqus_script('embed.js');
+      &lt;p&gt;HAOI2013   的特点&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;del&gt;题水&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;谁说的。。。&lt;br&gt;做了大半年的题你跟我说水。。。&lt;br&gt;欸，似乎真的很水。。。&lt;br&gt;大概是我太水吧。。。&lt;/p&gt;
+&lt;p&gt;&lt;a id
     
-  </script>
-
+    </summary>
+    
+      <category term="题解" scheme="http://kzime.xyz/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="HAOI" scheme="http://kzime.xyz/tags/HAOI/"/>
+    
+  </entry>
   
+  <entry>
+    <title>OI</title>
+    <link href="http://kzime.xyz/2017/03/18/OI/"/>
+    <id>http://kzime.xyz/2017/03/18/OI/</id>
+    <published>2017-03-18T07:06:26.000Z</published>
+    <updated>2017-05-04T08:41:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>5日之内水完洛谷试炼场<br>听起来好lowB啊QAQ</p>
+</blockquote>
+<h3 id="水个p，回去整HAOI2013的题解"><a href="#水个p，回去整HAOI2013的题解" class="headerlink" title="水个p，回去整HAOI2013的题解"></a>水个p，回去整HAOI2013的题解</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;5日之内水完洛谷试炼场&lt;br&gt;听起来好lowB啊QAQ&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;水个p，回去整HAOI2013的题解&quot;&gt;&lt;a href=&quot;#水个p，回去整HAOI2013的题解&quot; class=&quot;headerlink&quot; t
+    
+    </summary>
+    
+      <category term="blog" scheme="http://kzime.xyz/categories/blog/"/>
+    
+    
+  </entry>
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  <entry>
+    <title>就是个测试</title>
+    <link href="http://kzime.xyz/2017/03/18/test/"/>
+    <id>http://kzime.xyz/2017/03/18/test/</id>
+    <published>2017-03-18T01:56:54.000Z</published>
+    <updated>2017-05-04T08:42:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="开心开心，hexo的blog终于搞下来了"><a href="#开心开心，hexo的blog终于搞下来了" class="headerlink" title="开心开心，hexo的blog终于搞下来了"></a>开心开心，hexo的blog终于搞下来了</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"hello world"</span>);</div><div class="line">&#125;<span class="comment">/*kzime*/</span></div></pre></td></tr></table></figure>
+<h1 id="先来一发hello-world"><a href="#先来一发hello-world" class="headerlink" title="先来一发hello world"></a>先来一发hello world</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;开心开心，hexo的blog终于搞下来了&quot;&gt;&lt;a href=&quot;#开心开心，hexo的blog终于搞下来了&quot; class=&quot;headerlink&quot; title=&quot;开心开心，hexo的blog终于搞下来了&quot;&gt;&lt;/a&gt;开心开心，hexo的blog终于搞下来了&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://kzime.xyz/categories/blog/"/>
+    
+    
+  </entry>
   
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
-
-
-
-
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
+  <entry>
+    <title>CF 337A Puzzles (dp)</title>
+    <link href="http://kzime.xyz/2017/02/27/CCF%20337A(Puzzles)%20%E6%B0%B4dp/"/>
+    <id>http://kzime.xyz/2017/02/27/CCF 337A(Puzzles) 水dp/</id>
+    <published>2017-02-27T07:06:26.000Z</published>
+    <updated>2017-05-03T16:40:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><blockquote>
+<p>time limit per test1 second memory limit per test256<br>megabytes inputstandard input outputstandard output The end of the<br>school year is near and Ms. Manana, the teacher, will soon have to say<br>goodbye to a yet another class. She decided to prepare a goodbye<br>present for her n students and give each of them a jigsaw puzzle<br>(which, as wikipedia states, is a tiling puzzle that requires the<br>assembly of numerous small, often oddly shaped, interlocking and<br>tessellating pieces).<br>The shop assistant told the teacher that there are m puzzles in the<br>shop, but they might differ in difficulty and size. Specifically, the<br>first jigsaw puzzle consists of f1 pieces, the second one consists of<br>f2 pieces and so on.<br>Ms. Manana doesn’t want to upset the children, so she decided that the<br>difference between the numbers of pieces in her presents must be as<br>small as possible. Let A be the number of pieces in the largest puzzle<br>that the teacher buys and B be the number of pieces in the smallest<br>such puzzle. She wants to choose such n puzzles that A - B is minimum<br>possible. Help the teacher and find the least possible value of A - B.</p>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><blockquote>
+<p>The first line contains space-separated integers n and m<br>(2 ≤ n ≤ m ≤ 50). The second line contains m space-separated integers<br>f1, f2, …, fm (4 ≤ fi ≤ 1000) — the quantities of pieces in the<br>puzzles sold in the shop.</p>
+</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><blockquote>
+<p>Print a single integer — the least possible difference the<br>teacher can obtain.</p>
+</blockquote>
+<h3 id="Examples-input"><a href="#Examples-input" class="headerlink" title="Examples input"></a>Examples input</h3><blockquote>
+<p>4 6<br>10 12 10 7 5 22</p>
+</blockquote>
+<h3 id="output"><a href="#output" class="headerlink" title="output"></a>output</h3><blockquote>
+<p>5</p>
+</blockquote>
+<h3 id="一句话题面"><a href="#一句话题面" class="headerlink" title="一句话题面"></a>一句话题面</h3><p>从m个数中找出差值最小的n个数，然后输出这个最小的差值</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>毕竟A题，水，先排序，然后dp一下区间差值（就是区间里第i+m-1个数减去第i个数），找出最小的差值即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//kZime</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,m,a[<span class="number">55</span>],dp[<span class="number">55</span>],rs=<span class="number">1000</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> k=<span class="number">0</span>;<span class="keyword">char</span> f=<span class="number">1</span>,c=getchar();</div><div class="line">    <span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k*f;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	n=read();m=read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</div><div class="line">		a[i]=read();</div><div class="line">	&#125;</div><div class="line">	sort(a,a+m);</div><div class="line"><span class="comment">//	for(int i=0;i&lt;m;i++)cout&lt;&lt;a[i]&lt;&lt;" ";</span></div><div class="line"><span class="comment">//	cout&lt;&lt;endl;</span></div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m-n+<span class="number">1</span>;i++)&#123;</div><div class="line">		dp[i]=a[i+n<span class="number">-1</span>]-a[i];</div><div class="line">		rs=min(rs,dp[i]);</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,rs);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题面&quot;&gt;&lt;a href=&quot;#题面&quot; class=&quot;headerlink&quot; title=&quot;题面&quot;&gt;&lt;/a&gt;题面&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;time limit per test1 second memory limit per test256&lt;br&gt;m
+    
+    </summary>
+    
+      <category term="CSDN搬运" scheme="http://kzime.xyz/categories/CSDN%E6%90%AC%E8%BF%90/"/>
+    
+    
+  </entry>
   
+  <entry>
+    <title>快读</title>
+    <link href="http://kzime.xyz/2016/12/27/%E5%BF%AB%E8%AF%BB/"/>
+    <id>http://kzime.xyz/2016/12/27/快读/</id>
+    <published>2016-12-27T04:01:54.000Z</published>
+    <updated>2017-03-21T01:11:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="自己在CSDN的首博"><a href="#自己在CSDN的首博" class="headerlink" title="自己在CSDN的首博"></a>自己在CSDN的首博</h2><h3 id="贴贴贴"><a href="#贴贴贴" class="headerlink" title="贴贴贴"></a>贴贴贴</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> k=<span class="number">0</span>;<span class="keyword">char</span> f=<span class="number">1</span>,c=getchar();</div><div class="line">    <span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k*f;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>养成敲快读的好习惯:)  </p>
+<p><del>为成为毒瘤打好基础</del></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;自己在CSDN的首博&quot;&gt;&lt;a href=&quot;#自己在CSDN的首博&quot; class=&quot;headerlink&quot; title=&quot;自己在CSDN的首博&quot;&gt;&lt;/a&gt;自己在CSDN的首博&lt;/h2&gt;&lt;h3 id=&quot;贴贴贴&quot;&gt;&lt;a href=&quot;#贴贴贴&quot; class=&quot;header
+    
+    </summary>
+    
+      <category term="CSDN搬运" scheme="http://kzime.xyz/categories/CSDN%E6%90%AC%E8%BF%90/"/>
+    
+    
+  </entry>
   
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
-
-
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
-
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
-
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
-
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
-
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
-
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 0.4 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    var $tocContent = $('.post-toc-content');
-    if (isDesktop() && CONFIG.sidebar === 'post') {
-      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-        displaySidebar();
-      }
-    }
-  });
-</script>
-
-
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
-
-  
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
-  
-    <script type="text/javascript" color="157,157,157" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-  
-</body>
-</html>
+</feed>
