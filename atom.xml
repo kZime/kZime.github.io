@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kzime.xyz/"/>
-  <updated>2017-06-17T01:49:46.337Z</updated>
+  <updated>2017-05-25T01:06:13.000Z</updated>
   <id>http://kzime.xyz/</id>
   
   <author>
@@ -14,24 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://kzime.xyz/2017/06/17/%E6%B5%8B%E8%AF%95/"/>
-    <id>http://kzime.xyz/2017/06/17/测试/</id>
-    <published>2017-06-17T01:48:55.000Z</published>
-    <updated>2017-06-17T01:49:46.337Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">printf(&quot;Hello, World!\n&quot;);</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>zkw线段树！！！</title>
