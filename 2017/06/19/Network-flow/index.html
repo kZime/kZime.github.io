@@ -31,7 +31,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,Mala" />
+  <meta name="keywords" content="网络流,图论,二分图," />
 
 
 
@@ -42,16 +42,17 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
+<meta name="description" content="好久之前就想搞个这个了。。    问题编号 问题名称 问题模型 转化模型 完成情况     1 飞行员配对方案问题 二分图最大匹配 网络最大流 √   2 太空飞行计划问题 最大权闭合图 网络最小割 √   3 最小路径覆盖问题 有向无环图最小路径覆盖 网络最大流    4 魔术球问题简化/普通 有向无环图最小路径覆盖 网络最大流    5 圆桌问题 二分图多重匹配 网络最大流 √   6 最长递">
+<meta name="keywords" content="网络流,图论,二分图">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OI">
-<meta property="og:url" content="http://kzime.xyz/2017/03/18/OI/index.html">
+<meta property="og:title" content="[题目] 网络流和线性规划24题">
+<meta property="og:url" content="http://kzime.xyz/2017/06/19/Network-flow/index.html">
 <meta property="og:site_name" content="kZime&#39;s blog">
-<meta property="og:description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
-<meta property="og:updated_time" content="2017-05-04T08:41:57.000Z">
+<meta property="og:description" content="好久之前就想搞个这个了。。    问题编号 问题名称 问题模型 转化模型 完成情况     1 飞行员配对方案问题 二分图最大匹配 网络最大流 √   2 太空飞行计划问题 最大权闭合图 网络最小割 √   3 最小路径覆盖问题 有向无环图最小路径覆盖 网络最大流    4 魔术球问题简化/普通 有向无环图最小路径覆盖 网络最大流    5 圆桌问题 二分图多重匹配 网络最大流 √   6 最长递">
+<meta property="og:updated_time" content="2017-06-25T06:24:32.169Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OI">
-<meta name="twitter:description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
+<meta name="twitter:title" content="[题目] 网络流和线性规划24题">
+<meta name="twitter:description" content="好久之前就想搞个这个了。。    问题编号 问题名称 问题模型 转化模型 完成情况     1 飞行员配对方案问题 二分图最大匹配 网络最大流 √   2 太空飞行计划问题 最大权闭合图 网络最小割 √   3 最小路径覆盖问题 有向无环图最小路径覆盖 网络最大流    4 魔术球问题简化/普通 有向无环图最小路径覆盖 网络最大流    5 圆桌问题 二分图多重匹配 网络最大流 √   6 最长递">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +62,7 @@
   };
 </script>
 
-  <title> OI | kZime's blog </title>
+  <title> [题目] 网络流和线性规划24题 | kZime's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +224,7 @@
           
           
             
-              OI
+              [题目] 网络流和线性规划24题
             
           
         </h1>
@@ -232,8 +233,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2017-03-18T15:06:26+08:00" content="2017-03-18">
-            2017-03-18
+          <time itemprop="dateCreated" datetime="2017-06-19T15:00:43+08:00" content="2017-06-19">
+            2017-06-19
           </time>
         </span>
 
@@ -242,8 +243,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/blog/" itemprop="url" rel="index">
-                  <span itemprop="name">blog</span>
+                <a href="/categories/题目/" itemprop="url" rel="index">
+                  <span itemprop="name">题目</span>
                 </a>
               </span>
 
@@ -258,8 +259,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2017/03/18/OI/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/18/OI/" itemprop="commentsCount"></span>
+            <a href="/2017/06/19/Network-flow/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/19/Network-flow/" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -273,27 +274,216 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>5日之内水完洛谷试炼场<br>听起来好lowB啊QAQ</p>
-</blockquote>
-<h3 id="水个p，回去整HAOI2013的题解"><a href="#水个p，回去整HAOI2013的题解" class="headerlink" title="水个p，回去整HAOI2013的题解"></a>水个p，回去整HAOI2013的题解</h3></span>
+        <span itemprop="articleBody"><p>好久之前就想搞个这个了。。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">问题编号</th>
+<th style="text-align:center">问题名称</th>
+<th style="text-align:center">问题模型</th>
+<th style="text-align:center">转化模型</th>
+<th style="text-align:center">完成情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=14" target="_blank" rel="external">飞行员配对方案问题</a></td>
+<td style="text-align:center">二分图最大匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=396316" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=727" target="_blank" rel="external">太空飞行计划问题</a></td>
+<td style="text-align:center">最大权闭合图</td>
+<td style="text-align:center">网络最小割</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=417385" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=728" target="_blank" rel="external">最小路径覆盖问题</a></td>
+<td style="text-align:center">有向无环图最小路径覆盖</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=1302" target="_blank" rel="external">魔术球问题简化/普通</a></td>
+<td style="text-align:center">有向无环图最小路径覆盖</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=729" target="_blank" rel="external">圆桌问题</a></td>
+<td style="text-align:center">二分图多重匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=394782" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=731" target="_blank" rel="external">最长递增子序列问题</a></td>
+<td style="text-align:center">最多不相交路径</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=395947" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=732" target="_blank" rel="external">试题库问题</a></td>
+<td style="text-align:center">二分图多重匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=733" target="_blank" rel="external">机器人路径规划问题</a></td>
+<td style="text-align:center">(未解决)</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=734" target="_blank" rel="external">方格取数问题</a></td>
+<td style="text-align:center">二分图点权最大独立集</td>
+<td style="text-align:center">网络最小割</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=461" target="_blank" rel="external">餐巾计划问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=735" target="_blank" rel="external">航空路线问题</a></td>
+<td style="text-align:center">最长不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=439" target="_blank" rel="external">软件补丁问题</a></td>
+<td style="text-align:center">最小转移代价</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=736" target="_blank" rel="external">星际转移问题</a></td>
+<td style="text-align:center">网络判定</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=44" target="_blank" rel="external">孤岛营救问题</a></td>
+<td style="text-align:center">分层图最短路径</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=737" target="_blank" rel="external">汽车加油行驶问题</a></td>
+<td style="text-align:center">分层图最短路径</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=738" target="_blank" rel="external">数字梯形问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=739" target="_blank" rel="external">运输问题</a></td>
+<td style="text-align:center">网络费用流量</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=740" target="_blank" rel="external">分配问题</a></td>
+<td style="text-align:center">二分图最佳匹配</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=741" target="_blank" rel="external">负载平衡问题</a></td>
+<td style="text-align:center">最小代价供求</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=742" target="_blank" rel="external">深海机器人问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=743" target="_blank" rel="external">最长k可重区间集问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=744" target="_blank" rel="external">最长k可重线段集问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=745" target="_blank" rel="external">火星探险问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=746" target="_blank" rel="external">骑士共存</a></td>
+<td style="text-align:center">二分图最大独立集</td>
+<td style="text-align:center">网络最小割</td>
+</tr>
+</tbody>
+</table>
+<p>markdown 打这个表炒鸡累啊啊啊</p>
+</span>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/网络流/" rel="tag">#网络流</a>
+          
+            <a href="/tags/图论/" rel="tag">#图论</a>
+          
+            <a href="/tags/二分图/" rel="tag">#二分图</a>
+          
+        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/20/HAOI2013题解/" rel="prev">HAOI2013题解</a>
+              <a href="/2017/06/19/input/" rel="prev">c++读入比较</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/18/test/" rel="next">就是个测试</a>
+              <a href="/2017/06/19/soultap/" rel="next">[BYVoid S1] 灵魂分流药剂</a>
             
           </div>
         </div>
@@ -575,7 +765,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#水个p，回去整HAOI2013的题解"><span class="nav-number">1.</span> <span class="nav-text">水个p，回去整HAOI2013的题解</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -638,9 +828,9 @@
 
   <script type="text/javascript">
     var disqus_shortname = 'kzime';
-    var disqus_identifier = '2017/03/18/OI/';
-    var disqus_title = 'OI';
-    var disqus_url = 'http://kzime.xyz/2017/03/18/OI/';
+    var disqus_identifier = '2017/06/19/Network-flow/';
+    var disqus_title = '[题目] 网络流和线性规划24题';
+    var disqus_url = 'http://kzime.xyz/2017/06/19/Network-flow/';
 
     function run_disqus_script(disqus_script){
       var dsq = document.createElement('script');

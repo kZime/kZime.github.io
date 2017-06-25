@@ -31,7 +31,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,Mala" />
+  <meta name="keywords" content="网络流,图论," />
 
 
 
@@ -42,16 +42,17 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
+<meta name="description" content="题面描述 农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。 很不幸，有时候奶牛会不小心踩到电脑上，农夫约翰的车也可能碾过电脑，这台倒霉的电脑就会坏掉。这意味着这台电脑不能再发送电邮了，于是与这台电脑">
+<meta name="keywords" content="网络流,图论">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OI">
-<meta property="og:url" content="http://kzime.xyz/2017/03/18/OI/index.html">
+<meta property="og:title" content="[USACO5.4]奶牛的电信Telecowmunication">
+<meta property="og:url" content="http://kzime.xyz/2017/06/18/Telecowmunication/index.html">
 <meta property="og:site_name" content="kZime&#39;s blog">
-<meta property="og:description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
-<meta property="og:updated_time" content="2017-05-04T08:41:57.000Z">
+<meta property="og:description" content="题面描述 农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。 很不幸，有时候奶牛会不小心踩到电脑上，农夫约翰的车也可能碾过电脑，这台倒霉的电脑就会坏掉。这意味着这台电脑不能再发送电邮了，于是与这台电脑">
+<meta property="og:updated_time" content="2017-06-18T12:39:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OI">
-<meta name="twitter:description" content="5日之内水完洛谷试炼场听起来好lowB啊QAQ  水个p，回去整HAOI2013的题解">
+<meta name="twitter:title" content="[USACO5.4]奶牛的电信Telecowmunication">
+<meta name="twitter:description" content="题面描述 农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。 很不幸，有时候奶牛会不小心踩到电脑上，农夫约翰的车也可能碾过电脑，这台倒霉的电脑就会坏掉。这意味着这台电脑不能再发送电邮了，于是与这台电脑">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +62,7 @@
   };
 </script>
 
-  <title> OI | kZime's blog </title>
+  <title> [USACO5.4]奶牛的电信Telecowmunication | kZime's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +224,7 @@
           
           
             
-              OI
+              [USACO5.4]奶牛的电信Telecowmunication
             
           
         </h1>
@@ -232,8 +233,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2017-03-18T15:06:26+08:00" content="2017-03-18">
-            2017-03-18
+          <time itemprop="dateCreated" datetime="2017-06-18T20:13:44+08:00" content="2017-06-18">
+            2017-06-18
           </time>
         </span>
 
@@ -242,8 +243,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/blog/" itemprop="url" rel="index">
-                  <span itemprop="name">blog</span>
+                <a href="/categories/题解/" itemprop="url" rel="index">
+                  <span itemprop="name">题解</span>
                 </a>
               </span>
 
@@ -258,8 +259,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2017/03/18/OI/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/18/OI/" itemprop="commentsCount"></span>
+            <a href="/2017/06/18/Telecowmunication/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/06/18/Telecowmunication/" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -273,27 +274,61 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>5日之内水完洛谷试炼场<br>听起来好lowB啊QAQ</p>
+        <span itemprop="articleBody"><h3 id="题面描述"><a href="#题面描述" class="headerlink" title="题面描述"></a>题面描述</h3><blockquote>
+<p>农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。</p>
+<p>很不幸，有时候奶牛会不小心踩到电脑上，农夫约翰的车也可能碾过电脑，这台倒霉的电脑就会坏掉。这意味着这台电脑不能再发送电邮了，于是与这台电脑相关的连接也就不可用了。</p>
+<p>有两头奶牛就想：如果我们两个不能互发电邮，至少需要坏掉多少台电脑呢？请编写一个程序为她们计算这个最小值。</p>
+<p>以如下网络为例:</p>
+<p>​      1</p>
+<p>  /  </p>
+<p>3   —-   2</p>
+<p>这张图画的是有2条连接的3台电脑。我们想要在电脑1和2之间传送信息。电脑1与3、2与3直接连通。如果电脑3坏了，电脑1与2便不能互发信息了。</p>
 </blockquote>
-<h3 id="水个p，回去整HAOI2013的题解"><a href="#水个p，回去整HAOI2013的题解" class="headerlink" title="水个p，回去整HAOI2013的题解"></a>水个p，回去整HAOI2013的题解</h3></span>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><blockquote>
+<p>第一行 四个由空格分隔的整数：N,M,c1,c2.N是电脑总数，电脑由1到N编号。M是电脑之间连接的总数。最后的两个整数c1和c2是上述两头奶牛使用的电脑编号。连接没有重复且均为双向的(即如果c1与c2相连，那么c2与c1也相连)。两台电脑之间至多有一条连接。电脑c1和c2不会直接相连。</p>
+<p>第2到M+1行 接下来的M行中，每行包含两台直接相连的电脑的编号。</p>
+</blockquote>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><blockquote>
+<p>一个整数表示使电脑c1和c2不能互相通信需要坏掉的电脑数目的最小值。</p>
+</blockquote>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">3 2 1 2</div><div class="line">1 3</div><div class="line">2 3</div></pre></td></tr></table></figure>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1</div></pre></td></tr></table></figure>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><blockquote>
+<p>1&lt;=N&lt;=100,   1&lt;=M&lt;=600</p>
+</blockquote>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>求最小割点集的大小</p>
+<p>将每个点拆成点$u$和点$u + n$，从$u$到$u+ n$ 连一条边权为$1$的边。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">addedge(u, u + n, <span class="number">1</span>);</div><div class="line">addedge(u + n, u, <span class="number">0</span>);</div></pre></td></tr></table></figure>
+<p>对于图中原来存在的边$u \implies v$ ，使$u + n$连向$v$， $v + n$ 连向$u$ ，边权都为无穷大。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">addedge(u + n, v, INF);</div><div class="line">addedge(v, u + n, <span class="number">0</span>);</div><div class="line">addedge(v + n, u, INF);</div><div class="line">addedge(u, v + n, <span class="number">0</span>);</div></pre></td></tr></table></figure>
+<p>然后对然后以源点$S + n$，汇点$T$跑一边最大流就行了。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="meta"># <span class="meta-keyword">define</span> MAXN 123</span></div><div class="line"><span class="meta"># <span class="meta-keyword">define</span> INF 0x7fffffff</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">getc</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">char</span> buf[<span class="number">1</span> &lt;&lt; <span class="number">18</span>], *fs, *ft;</div><div class="line">    <span class="keyword">return</span> (fs == ft &amp;&amp; (ft = (fs = buf) + fread(buf, <span class="number">1</span>, <span class="number">1</span> &lt;&lt; <span class="number">18</span>, <span class="built_in">stdin</span>)), fs == ft) ? EOF : *fs++;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">gn</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">char</span> c = getc();</div><div class="line">    <span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getc()) <span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getc()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> f * k;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">edge</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> to, w, ne;</div><div class="line">    edge() &#123;;&#125;</div><div class="line">    edge(<span class="keyword">int</span> to_, <span class="keyword">int</span> w_, <span class="keyword">int</span> ne_) &#123;</div><div class="line">        to = to_, ne = ne_, w = w_;</div><div class="line">    &#125;</div><div class="line">&#125;e[MAXN &lt;&lt; <span class="number">5</span>];</div><div class="line"></div><div class="line"><span class="keyword">int</span> cnt, head[MAXN &lt;&lt; <span class="number">1</span>], s, t, n, m;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> fr, <span class="keyword">int</span> to, <span class="keyword">int</span> w)</span> </span>&#123;</div><div class="line">    e[cnt] = edge(to, w, head[fr]), head[fr] = cnt++;</div><div class="line">    e[cnt] = edge(fr, <span class="number">0</span>, head[to]), head[to] = cnt++;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">int</span> dis[MAXN &lt;&lt; <span class="number">1</span>];</div><div class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; q;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">bfs</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">memset</span>(dis, <span class="number">-1</span>, <span class="keyword">sizeof</span>(dis));</div><div class="line">    q.push(s);</div><div class="line">    dis[s] = <span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span>(!q.empty()) &#123;</div><div class="line">        <span class="keyword">int</span> u = q.front();</div><div class="line">        q.pop();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = head[u]; ~i; i = e[i].ne) &#123;</div><div class="line">            <span class="keyword">int</span> v = e[i].to;</div><div class="line">            <span class="keyword">if</span>(!~dis[v] &amp;&amp; e[i].w &gt; <span class="number">0</span>) &#123;</div><div class="line">                dis[v] = dis[u] + <span class="number">1</span>;</div><div class="line">                q.push(v);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;   </div><div class="line">    <span class="keyword">return</span> ~dis[t];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> rec = <span class="number">0</span>;</div><div class="line">    <span class="keyword">if</span>(u == t) <span class="keyword">return</span> val;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = head[u]; ~i; i = e[i].ne) &#123;</div><div class="line">        <span class="keyword">int</span> v = e[i].to;</div><div class="line">        <span class="keyword">if</span>(dis[v] == dis[u] + <span class="number">1</span> &amp;&amp; e[i].w &gt; <span class="number">0</span> &amp;&amp; (rec = dfs(e[i].to, min(val, e[i].w)))) &#123;</div><div class="line">            e[i].w -= rec;</div><div class="line">            e[i ^ <span class="number">1</span>].w += rec;</div><div class="line">            <span class="keyword">return</span> rec;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">max_flow</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>, u;</div><div class="line">    <span class="keyword">while</span>(bfs()) &#123;</div><div class="line">        <span class="keyword">while</span>(u = dfs(s, INF)) ans += u;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">memset</span>(head, <span class="number">-1</span>, <span class="keyword">sizeof</span>(head));</div><div class="line">    n = gn(), m = gn(), s = gn() + n, t = gn();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) addedge(i, i + n, <span class="number">1</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x, y, i = <span class="number">1</span>; i &lt;= m; i++) &#123;</div><div class="line">        x = gn(), y = gn();</div><div class="line">        addedge(x + n, y, INF);</div><div class="line">        addedge(y + n, x, INF);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, max_flow());</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</span>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/网络流/" rel="tag">#网络流</a>
+          
+            <a href="/tags/图论/" rel="tag">#图论</a>
+          
+        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/20/HAOI2013题解/" rel="prev">HAOI2013题解</a>
+              <a href="/2017/06/19/soultap/" rel="prev">[BYVoid S1] 灵魂分流药剂</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/18/test/" rel="next">就是个测试</a>
+              <a href="/2017/05/08/zkw/" rel="next">zkw线段树！！！</a>
             
           </div>
         </div>
@@ -575,7 +610,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#水个p，回去整HAOI2013的题解"><span class="nav-number">1.</span> <span class="nav-text">水个p，回去整HAOI2013的题解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题面描述"><span class="nav-number">1.</span> <span class="nav-text">题面描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入格式"><span class="nav-number">2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出格式"><span class="nav-number">3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例"><span class="nav-number">4.</span> <span class="nav-text">样例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输入"><span class="nav-number">4.1.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输出"><span class="nav-number">4.2.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据范围"><span class="nav-number">4.3.</span> <span class="nav-text">数据范围</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#思路"><span class="nav-number">5.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">6.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -638,9 +673,9 @@
 
   <script type="text/javascript">
     var disqus_shortname = 'kzime';
-    var disqus_identifier = '2017/03/18/OI/';
-    var disqus_title = 'OI';
-    var disqus_url = 'http://kzime.xyz/2017/03/18/OI/';
+    var disqus_identifier = '2017/06/18/Telecowmunication/';
+    var disqus_title = '[USACO5.4]奶牛的电信Telecowmunication';
+    var disqus_url = 'http://kzime.xyz/2017/06/18/Telecowmunication/';
 
     function run_disqus_script(disqus_script){
       var dsq = document.createElement('script');
