@@ -457,16 +457,26 @@
       
         
           
-          题面
-time limit per test1 second memory limit per test256megabytes inputstandard input outputstandard output The end of theschool year is near and Ms. M
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/27/CCF 337A(Puzzles) 水dp/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><blockquote>
+<p>time limit per test1 second memory limit per test256<br>megabytes inputstandard input outputstandard output The end of the<br>school year is near and Ms. Manana, the teacher, will soon have to say<br>goodbye to a yet another class. She decided to prepare a goodbye<br>present for her n students and give each of them a jigsaw puzzle<br>(which, as wikipedia states, is a tiling puzzle that requires the<br>assembly of numerous small, often oddly shaped, interlocking and<br>tessellating pieces).<br>The shop assistant told the teacher that there are m puzzles in the<br>shop, but they might differ in difficulty and size. Specifically, the<br>first jigsaw puzzle consists of f1 pieces, the second one consists of<br>f2 pieces and so on.<br>Ms. Manana doesn’t want to upset the children, so she decided that the<br>difference between the numbers of pieces in her presents must be as<br>small as possible. Let A be the number of pieces in the largest puzzle<br>that the teacher buys and B be the number of pieces in the smallest<br>such puzzle. She wants to choose such n puzzles that A - B is minimum<br>possible. Help the teacher and find the least possible value of A - B.</p>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><blockquote>
+<p>The first line contains space-separated integers n and m<br>(2 ≤ n ≤ m ≤ 50). The second line contains m space-separated integers<br>f1, f2, …, fm (4 ≤ fi ≤ 1000) — the quantities of pieces in the<br>puzzles sold in the shop.</p>
+</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><blockquote>
+<p>Print a single integer — the least possible difference the<br>teacher can obtain.</p>
+</blockquote>
+<h3 id="Examples-input"><a href="#Examples-input" class="headerlink" title="Examples input"></a>Examples input</h3><blockquote>
+<p>4 6<br>10 12 10 7 5 22</p>
+</blockquote>
+<h3 id="output"><a href="#output" class="headerlink" title="output"></a>output</h3><blockquote>
+<p>5</p>
+</blockquote>
+<h3 id="一句话题面"><a href="#一句话题面" class="headerlink" title="一句话题面"></a>一句话题面</h3><p>从m个数中找出差值最小的n个数，然后输出这个最小的差值</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>毕竟A题，水，先排序，然后dp一下区间差值（就是区间里第i+m-1个数减去第i个数），找出最小的差值即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//kZime</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">int</span> n,m,a[<span class="number">55</span>],dp[<span class="number">55</span>],rs=<span class="number">1000</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> k=<span class="number">0</span>;<span class="keyword">char</span> f=<span class="number">1</span>,c=getchar();</div><div class="line">    <span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k*f;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	n=read();m=read();</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</div><div class="line">		a[i]=read();</div><div class="line">	&#125;</div><div class="line">	sort(a,a+m);</div><div class="line"><span class="comment">//	for(int i=0;i&lt;m;i++)cout&lt;&lt;a[i]&lt;&lt;" ";</span></div><div class="line"><span class="comment">//	cout&lt;&lt;endl;</span></div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m-n+<span class="number">1</span>;i++)&#123;</div><div class="line">		dp[i]=a[i+n<span class="number">-1</span>]-a[i];</div><div class="line">		rs=min(rs,dp[i]);</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,rs);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -648,15 +658,11 @@ time limit per test1 second memory limit per test256megabytes inputstandard inpu
       
         
           
-          自己在CSDN的首博贴贴贴123456inline int read()&#123;    int k=0;char f=1,c=getchar();    for(;!isdigit(c);c=getchar())if(c=='-')f=-1;    for(;isdigit(c);c=getch
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/12/27/快读/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="自己在CSDN的首博"><a href="#自己在CSDN的首博" class="headerlink" title="自己在CSDN的首博"></a>自己在CSDN的首博</h2><h3 id="贴贴贴"><a href="#贴贴贴" class="headerlink" title="贴贴贴"></a>贴贴贴</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> k=<span class="number">0</span>;<span class="keyword">char</span> f=<span class="number">1</span>,c=getchar();</div><div class="line">    <span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k*f;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>养成敲快读的好习惯:)  </p>
+<p><del>为成为毒瘤打好基础</del></p>
+
+          
         
       
     </div>

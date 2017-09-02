@@ -457,19 +457,18 @@
       
         
           
-          数据: 1e7
-数据范围: int
-重定向文件读入
-优化: 无
-cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123;     int n, k;    cin &gt;&g
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/19/input/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>数据: 1e7</p>
+<p>数据范围: int</p>
+<p>重定向文件读入</p>
+<p>优化: 无</p>
+<h4 id="cin"><a href="#cin" class="headerlink" title="cin"></a>cin</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">cin</span> &gt;&gt; k;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">    real    0m8.912s</div><div class="line">    user    0m8.844s</div><div class="line">    sys     0m0.048s</div><div class="line">*/</div></pre></td></tr></table></figure>
+<h4 id="cin-取消兼容stdio"><a href="#cin-取消兼容stdio" class="headerlink" title="cin 取消兼容stdio"></a>cin 取消兼容stdio</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">cin</span> &gt;&gt; k;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">	real	0m1.897s</div><div class="line">	user	0m1.844s</div><div class="line">	sys		0m0.032s</div><div class="line">*/</div></pre></td></tr></table></figure>
+<h4 id="scanf"><a href="#scanf" class="headerlink" title="scanf"></a>scanf</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">    real	0m2.180s</div><div class="line">    user	0m2.140s</div><div class="line">    sys	    0m0.028s</div><div class="line">*/</div></pre></td></tr></table></figure>
+<h4 id="getchar"><a href="#getchar" class="headerlink" title="getchar()"></a>getchar()</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">gn</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>;</div><div class="line">    <span class="keyword">char</span> c = getchar();</div><div class="line">    <span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getchar()) <span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getchar()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k * f;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    n = gn();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        k = gn();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">	real	0m1.642s</div><div class="line">	user	0m1.588s</div><div class="line">	sys		0m0.052s</div><div class="line">*/</div></pre></td></tr></table></figure>
+<h4 id="fread"><a href="#fread" class="headerlink" title="fread()"></a>fread()</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">getc</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">static</span> <span class="keyword">char</span> buf[<span class="number">1</span> &lt;&lt; <span class="number">18</span>], *fs, *ft;</div><div class="line">    <span class="keyword">return</span> (fs == ft &amp;&amp; (ft = (fs = buf) + fread(buf, <span class="number">1</span>, <span class="number">1</span> &lt;&lt; <span class="number">18</span>, <span class="built_in">stdin</span>)), fs == ft) ? EOF : *fs++;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">gn</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">register</span> <span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">char</span> c = getc();</div><div class="line">    <span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getc()) <span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getc()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k * f;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    n = gn();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        k = gn();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">	real	0m0.648s</div><div class="line">	user	0m0.608s</div><div class="line">	sys		0m0.036s</div><div class="line">*/</div></pre></td></tr></table></figure>
+<p>显而易见，在OI系列比赛中，快读保平安233</p>
+
+          
         
       
     </div>
@@ -651,51 +650,190 @@ cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int mai
       
         
           
-          好久之前就想搞个这个了。。
+            <p>好久之前就想搞个这个了。。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">问题编号</th>
+<th style="text-align:center">问题名称</th>
+<th style="text-align:center">问题模型</th>
+<th style="text-align:center">转化模型</th>
+<th style="text-align:center">完成情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=14" target="_blank" rel="external">飞行员配对方案问题</a></td>
+<td style="text-align:center">二分图最大匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=396316" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=727" target="_blank" rel="external">太空飞行计划问题</a></td>
+<td style="text-align:center">最大权闭合图</td>
+<td style="text-align:center">网络最小割</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=417385" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=728" target="_blank" rel="external">最小路径覆盖问题</a></td>
+<td style="text-align:center">有向无环图最小路径覆盖</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=1302" target="_blank" rel="external">魔术球问题简化/普通</a></td>
+<td style="text-align:center">有向无环图最小路径覆盖</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=729" target="_blank" rel="external">圆桌问题</a></td>
+<td style="text-align:center">二分图多重匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=394782" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=731" target="_blank" rel="external">最长递增子序列问题</a></td>
+<td style="text-align:center">最多不相交路径</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/submit/code.php?id=395947" target="_blank" rel="external">√</a></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=732" target="_blank" rel="external">试题库问题</a></td>
+<td style="text-align:center">二分图多重匹配</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=733" target="_blank" rel="external">机器人路径规划问题</a></td>
+<td style="text-align:center">(未解决)</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=734" target="_blank" rel="external">方格取数问题</a></td>
+<td style="text-align:center">二分图点权最大独立集</td>
+<td style="text-align:center">网络最小割</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=461" target="_blank" rel="external">餐巾计划问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=735" target="_blank" rel="external">航空路线问题</a></td>
+<td style="text-align:center">最长不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=439" target="_blank" rel="external">软件补丁问题</a></td>
+<td style="text-align:center">最小转移代价</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">13</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=736" target="_blank" rel="external">星际转移问题</a></td>
+<td style="text-align:center">网络判定</td>
+<td style="text-align:center">网络最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">14</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=44" target="_blank" rel="external">孤岛营救问题</a></td>
+<td style="text-align:center">分层图最短路径</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">15</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=737" target="_blank" rel="external">汽车加油行驶问题</a></td>
+<td style="text-align:center">分层图最短路径</td>
+<td style="text-align:center">最短路径</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">16</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=738" target="_blank" rel="external">数字梯形问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">17</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=739" target="_blank" rel="external">运输问题</a></td>
+<td style="text-align:center">网络费用流量</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">18</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=740" target="_blank" rel="external">分配问题</a></td>
+<td style="text-align:center">二分图最佳匹配</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">19</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=741" target="_blank" rel="external">负载平衡问题</a></td>
+<td style="text-align:center">最小代价供求</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">20</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=742" target="_blank" rel="external">深海机器人问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">21</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=743" target="_blank" rel="external">最长k可重区间集问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">22</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=744" target="_blank" rel="external">最长k可重线段集问题</a></td>
+<td style="text-align:center">最大权不相交路径</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">23</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=745" target="_blank" rel="external">火星探险问题</a></td>
+<td style="text-align:center">线性规划网络优化</td>
+<td style="text-align:center">最小费用最大流</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">24</td>
+<td style="text-align:center"><a href="http://cogs.pro/cogs/problem/problem.php?pid=746" target="_blank" rel="external">骑士共存</a></td>
+<td style="text-align:center">二分图最大独立集</td>
+<td style="text-align:center">网络最小割</td>
+</tr>
+</tbody>
+</table>
+<p>markdown 打这个表炒鸡累啊啊啊</p>
 
-
-
-问题编号
-问题名称
-问题模型
-转化模型
-完成情况
-
-
-
-
-1
-飞行员配对方案问题
-二分图最大匹配
-网络最大流
-√
-
-
-2
-太空飞行计划问题
-最大权闭合图
-网络最小割
-√
-
-
-3
-最小路径覆盖问题
-有向无环图最小路径覆盖
-网络最大流
-
-
-
-4
-魔术球问题简化/普通
-有
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/19/Network-flow/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -877,16 +1015,33 @@ cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int mai
       
         
           
-          题面
-幽暗城皇家炼金师赫布瑞姆刚刚发明了一种用来折磨战俘的新型药 剂，这种药剂被称为灵魂分流药剂。灵魂分流药剂的妙处在于能够给战俘带来巨大的痛苦，但是却不会让战俘死去。这种药剂中包含了一些治疗的成分，所以即使战 俘想自尽，也会被救活。用这种求生不得，求死不能的感觉，来对付反对希尔瓦娜斯女王的狂徒们，
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/19/soultap/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><blockquote>
+<p>幽暗城皇家炼金师赫布瑞姆刚刚发明了一种用来折磨战俘的新型药 剂，这种药剂被称为灵魂分流药剂。灵魂分流药剂的妙处在于能够给战俘带来巨大的痛苦，但是却不会让战俘死去。这种药剂中包含了一些治疗的成分，所以即使战 俘想自尽，也会被救活。用这种求生不得，求死不能的感觉，来对付反对希尔瓦娜斯女王的狂徒们，实在是太美妙了。当然，灵魂分流药剂要限定在一个用量范围之 内，过少会达不到效果，而过多会直接杀了战俘。</p>
+<p>最近，我们抓获了一个来自暴风城的探子，他掌握了我们的许多重要情报。希尔瓦娜斯女王命令你用最痛苦的手段折磨他。你从你的导师，灵魂分流药剂的发明者——皇家炼金师赫布瑞姆那里获得了N瓶药剂。每瓶按照药性的不同装在M个箱子中。每瓶药剂都有一个规格：对服用者造成的肉体伤害w，对服用者造成的意志折磨v，所属的箱子t，和对服用者造成的痛苦值p。</p>
+<p>据我们测试，那个暴风城探子的生命值为A，意志力为B。你要从每个箱子中最多拿取1瓶药剂喂给他。注意，喂给他的药剂造成的总肉体伤害不能超过他的生命值A，否则他会死去，总意志折磨不能超过他的意志力B，否则他会精神崩溃，我们没有必要给一个精神崩溃的傻瓜制造那么多痛苦。在不让他死去或者精神崩溃的前提下，你要尽可能多的给他制造痛苦，你能解决这个问题吗？</p>
+</blockquote>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><blockquote>
+<p>第1行：四个整数N,M,A,B，M个箱子的编号为1..M。</p>
+<p>第2行至第N+1行：第i+1行四个整数w,v,t,p表示第i瓶药剂的肉体伤害，意志折磨，所属箱子的编号，和造成的痛苦值。</p>
+</blockquote>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><blockquote>
+<p>第1行：一个整数，表示能够造成的最大的痛苦值。</p>
+</blockquote>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">5 3 20 20</div><div class="line">5 10 1 200</div><div class="line">10 5 1 100</div><div class="line">8 11 2 56</div><div class="line">10 10 2 50</div><div class="line">5 5 3 100</div></pre></td></tr></table></figure>
+<h4 id="output"><a href="#output" class="headerlink" title="output"></a>output</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">300</div></pre></td></tr></table></figure>
+<h4 id="数据规模"><a href="#数据规模" class="headerlink" title="数据规模"></a>数据规模</h4><blockquote>
+<p>对于30%的数据</p>
+<p>N&lt;=30</p>
+<p>M&lt;=5</p>
+<p>对于100%的数据</p>
+<p>N&lt;=100</p>
+<p>M&lt;=10</p>
+<p>A,B&lt;=100</p>
+</blockquote>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>裸的二维背包。。注意数据格式</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"> </div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">getc</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">static</span> <span class="keyword">char</span> buf[<span class="number">1</span> &lt;&lt; <span class="number">18</span>], *fs, *ft;</div><div class="line">    <span class="keyword">return</span> (fs == ft &amp;&amp; (ft = (fs = buf) + fread(buf, <span class="number">1</span>, <span class="number">1</span> &lt;&lt; <span class="number">18</span>, <span class="built_in">stdin</span>)), fs == ft) ? EOF : *fs++;</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">gn</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">register</span> <span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">char</span> c = getc();</div><div class="line">    <span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getc()) <span class="keyword">if</span> (c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getc()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k * f;</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="keyword">int</span> f[<span class="number">102</span>][<span class="number">102</span>][<span class="number">102</span>], n, m, a, b, w[<span class="number">102</span>], v[<span class="number">102</span>], p[<span class="number">102</span>], ans;</div><div class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; box[<span class="number">12</span>];</div><div class="line"> </div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line"><span class="meta"># <span class="meta-keyword">ifndef</span> LOCAL</span></div><div class="line">    freopen(<span class="string">"soultap.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line">    freopen(<span class="string">"soultap.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);</div><div class="line"><span class="meta"># <span class="meta-keyword">else</span> </span></div><div class="line">    freopen(<span class="string">"in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);</div><div class="line"><span class="meta"># <span class="meta-keyword">endif</span></span></div><div class="line">    n = gn(), m = gn(), a = gn(), b = gn();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> t, i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        w[i] = gn(), v[i] = gn(), t = gn(), p[i] = gn();</div><div class="line">        box[t].push_back(i);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123; </div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= a; j++) &#123; </div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= b; k++) &#123; </div><div class="line">                f[i][j][k] = f[i - <span class="number">1</span>][j][k];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> o = <span class="number">0</span>; o &lt; box[i].size(); o++) &#123; </div><div class="line">            <span class="keyword">int</span> tmp = box[i][o];</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = w[tmp]; j &lt;= a; j++) &#123; </div><div class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> k = v[tmp]; k &lt;= b; k++) &#123; </div><div class="line">                    f[i][j][k] = max(f[i][j][k], f[i - <span class="number">1</span>][j - w[tmp]][k - v[tmp]] + p[tmp]);</div><div class="line">                    ans = max(ans, f[i][j][k]);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, ans);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -1068,17 +1223,37 @@ cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int mai
       
         
           
-          题面描述
-农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。
-很不幸，有时候奶牛会不小心踩到电脑上，
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/18/Telecowmunication/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h3 id="题面描述"><a href="#题面描述" class="headerlink" title="题面描述"></a>题面描述</h3><blockquote>
+<p>农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。</p>
+<p>很不幸，有时候奶牛会不小心踩到电脑上，农夫约翰的车也可能碾过电脑，这台倒霉的电脑就会坏掉。这意味着这台电脑不能再发送电邮了，于是与这台电脑相关的连接也就不可用了。</p>
+<p>有两头奶牛就想：如果我们两个不能互发电邮，至少需要坏掉多少台电脑呢？请编写一个程序为她们计算这个最小值。</p>
+<p>以如下网络为例:</p>
+<p>​      1</p>
+<p>  /  </p>
+<p>3   —-   2</p>
+<p>这张图画的是有2条连接的3台电脑。我们想要在电脑1和2之间传送信息。电脑1与3、2与3直接连通。如果电脑3坏了，电脑1与2便不能互发信息了。</p>
+</blockquote>
+<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><blockquote>
+<p>第一行 四个由空格分隔的整数：N,M,c1,c2.N是电脑总数，电脑由1到N编号。M是电脑之间连接的总数。最后的两个整数c1和c2是上述两头奶牛使用的电脑编号。连接没有重复且均为双向的(即如果c1与c2相连，那么c2与c1也相连)。两台电脑之间至多有一条连接。电脑c1和c2不会直接相连。</p>
+<p>第2到M+1行 接下来的M行中，每行包含两台直接相连的电脑的编号。</p>
+</blockquote>
+<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><blockquote>
+<p>一个整数表示使电脑c1和c2不能互相通信需要坏掉的电脑数目的最小值。</p>
+</blockquote>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">3 2 1 2</div><div class="line">1 3</div><div class="line">2 3</div></pre></td></tr></table></figure>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1</div></pre></td></tr></table></figure>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><blockquote>
+<p>1&lt;=N&lt;=100,   1&lt;=M&lt;=600</p>
+</blockquote>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>求最小割点集的大小</p>
+<p>将每个点拆成点$u$和点$u + n$，从$u$到$u+ n$ 连一条边权为$1$的边。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">addedge(u, u + n, <span class="number">1</span>);</div><div class="line">addedge(u + n, u, <span class="number">0</span>);</div></pre></td></tr></table></figure>
+<p>对于图中原来存在的边$u \implies v$ ，使$u + n$连向$v$， $v + n$ 连向$u$ ，边权都为无穷大。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">addedge(u + n, v, INF);</div><div class="line">addedge(v, u + n, <span class="number">0</span>);</div><div class="line">addedge(v + n, u, INF);</div><div class="line">addedge(u, v + n, <span class="number">0</span>);</div></pre></td></tr></table></figure>
+<p>然后对然后以源点$S + n$，汇点$T$跑一边最大流就行了。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="meta"># <span class="meta-keyword">define</span> MAXN 123</span></div><div class="line"><span class="meta"># <span class="meta-keyword">define</span> INF 0x7fffffff</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">getc</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">char</span> buf[<span class="number">1</span> &lt;&lt; <span class="number">18</span>], *fs, *ft;</div><div class="line">    <span class="keyword">return</span> (fs == ft &amp;&amp; (ft = (fs = buf) + fread(buf, <span class="number">1</span>, <span class="number">1</span> &lt;&lt; <span class="number">18</span>, <span class="built_in">stdin</span>)), fs == ft) ? EOF : *fs++;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">gn</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">int</span> k = <span class="number">0</span>, f = <span class="number">1</span>;</div><div class="line">    <span class="keyword">register</span> <span class="keyword">char</span> c = getc();</div><div class="line">    <span class="keyword">for</span>(; !<span class="built_in">isdigit</span>(c); c = getc()) <span class="keyword">if</span>(c == <span class="string">'-'</span>) f = <span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(; <span class="built_in">isdigit</span>(c); c = getc()) k = k * <span class="number">10</span> + c - <span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> f * k;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">edge</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> to, w, ne;</div><div class="line">    edge() &#123;;&#125;</div><div class="line">    edge(<span class="keyword">int</span> to_, <span class="keyword">int</span> w_, <span class="keyword">int</span> ne_) &#123;</div><div class="line">        to = to_, ne = ne_, w = w_;</div><div class="line">    &#125;</div><div class="line">&#125;e[MAXN &lt;&lt; <span class="number">5</span>];</div><div class="line"></div><div class="line"><span class="keyword">int</span> cnt, head[MAXN &lt;&lt; <span class="number">1</span>], s, t, n, m;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">addedge</span><span class="params">(<span class="keyword">int</span> fr, <span class="keyword">int</span> to, <span class="keyword">int</span> w)</span> </span>&#123;</div><div class="line">    e[cnt] = edge(to, w, head[fr]), head[fr] = cnt++;</div><div class="line">    e[cnt] = edge(fr, <span class="number">0</span>, head[to]), head[to] = cnt++;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">int</span> dis[MAXN &lt;&lt; <span class="number">1</span>];</div><div class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; q;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">bfs</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">memset</span>(dis, <span class="number">-1</span>, <span class="keyword">sizeof</span>(dis));</div><div class="line">    q.push(s);</div><div class="line">    dis[s] = <span class="number">0</span>;</div><div class="line">    <span class="keyword">while</span>(!q.empty()) &#123;</div><div class="line">        <span class="keyword">int</span> u = q.front();</div><div class="line">        q.pop();</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = head[u]; ~i; i = e[i].ne) &#123;</div><div class="line">            <span class="keyword">int</span> v = e[i].to;</div><div class="line">            <span class="keyword">if</span>(!~dis[v] &amp;&amp; e[i].w &gt; <span class="number">0</span>) &#123;</div><div class="line">                dis[v] = dis[u] + <span class="number">1</span>;</div><div class="line">                q.push(v);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;   </div><div class="line">    <span class="keyword">return</span> ~dis[t];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> u, <span class="keyword">int</span> val)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> rec = <span class="number">0</span>;</div><div class="line">    <span class="keyword">if</span>(u == t) <span class="keyword">return</span> val;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = head[u]; ~i; i = e[i].ne) &#123;</div><div class="line">        <span class="keyword">int</span> v = e[i].to;</div><div class="line">        <span class="keyword">if</span>(dis[v] == dis[u] + <span class="number">1</span> &amp;&amp; e[i].w &gt; <span class="number">0</span> &amp;&amp; (rec = dfs(e[i].to, min(val, e[i].w)))) &#123;</div><div class="line">            e[i].w -= rec;</div><div class="line">            e[i ^ <span class="number">1</span>].w += rec;</div><div class="line">            <span class="keyword">return</span> rec;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">max_flow</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>, u;</div><div class="line">    <span class="keyword">while</span>(bfs()) &#123;</div><div class="line">        <span class="keyword">while</span>(u = dfs(s, INF)) ans += u;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">memset</span>(head, <span class="number">-1</span>, <span class="keyword">sizeof</span>(head));</div><div class="line">    n = gn(), m = gn(), s = gn() + n, t = gn();</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) addedge(i, i + n, <span class="number">1</span>);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> x, y, i = <span class="number">1</span>; i &lt;= m; i++) &#123;</div><div class="line">        x = gn(), y = gn();</div><div class="line">        addedge(x + n, y, INF);</div><div class="line">        addedge(y + n, x, INF);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, max_flow());</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -1260,29 +1435,32 @@ cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int mai
       
         
           
-          ZKW线段树！！！
-出处 :  统计的力量 by THU张昆玮
-
-跟普通线段树的区别：
-
-非递归调用， 常数小
-
-堆式满二叉树储存，是点树
-
-信息向上传递
-
-大概来一张图来表现普通线段树与zkw重口味线段树的储存方式的差距。  
-这个是普通的线段树zkw线段树
-
-qwq有没有dalao安利我绘图工具
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/08/zkw/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h3 id="ZKW线段树！！！"><a href="#ZKW线段树！！！" class="headerlink" title="ZKW线段树！！！"></a>ZKW线段树！！！</h3><blockquote>
+<p>出处 :  <a href="https://wenku.baidu.com/view/0c1bbba40029bd64783e2cca.html" target="_blank" rel="external">统计的力量</a> by THU张昆玮</p>
+</blockquote>
+<p>跟普通线段树的区别：</p>
+<ol>
+<li><p>非递归调用， 常数小</p>
+</li>
+<li><p>堆式满二叉树储存，是点树</p>
+</li>
+<li>信息向上传递</li>
+</ol>
+<p>大概来一张图来表现普通线段树与zkw<del>重口味</del>线段树的储存方式的差距。  </p>
+<p>这个是普通的线段树<br><img src="http://218.28.19.228/upload/image/20170508/20170508210030_47649.bmp" alt="普通线段树"><br>zkw线段树<br><img src="http://218.28.19.228/upload/image/20170508/20170508210047_69213.bmp" alt="zkw线段树"></p>
+<blockquote>
+<p><del>qwq有没有dalao安利我绘图工具啊，windows自带画板快把强迫症逼死了啊啊啊啊啊</del></p>
+</blockquote>
+<p>是不是非常的简单明了==<br>反正就是能够发现，你可以很快的找到叶子节点的位置<br>作为二叉树，线段树的标号是这样的<br><img src="http://img.blog.csdn.net/20160326214437351" alt="二叉树"><br>转换成二进制之后是这样的<br><img src="http://img.blog.csdn.net/20160326214557758" alt="二进制"><br>很显然nd[x]的父亲节点是nd[x &gt;&gt; 1], 而nd[x]的两个儿子节点的标号分别是nd[x &lt;&lt; 1]和nd[x &lt;&lt; 1 | 1].  </p>
+<p>接下来是求区间和的各个操作的演示代码</p>
+<h4 id="inline-void-build"><a href="#inline-void-build" class="headerlink" title="inline void build()"></a>inline void build()</h4><p>建树十分简单<br><strong>PS</strong>: 为了保证叶子节点都在同一层，必须保证最后一层的节点数量是大于n的最小的2的幂，也就是代码中的M<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">push_up</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123; <span class="comment">// 上传过程</span></div><div class="line">    nd[x] = nd[x &lt;&lt; <span class="number">1</span>] + nd[x &lt;&lt; <span class="number">1</span> | <span class="number">1</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">while</span>(M &lt;= n + <span class="number">1</span>) &#123; <span class="comment">// M可以等于n 所以要M &lt;= n + 1</span></div><div class="line">        M &lt;&lt;= <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = M + <span class="number">1</span>; i &lt;= M + n; i++) &#123; <span class="comment">// 处理叶子节点</span></div><div class="line">        nd[i] = get_num();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = M; i &gt;= <span class="number">1</span>; i--) &#123; <span class="comment">// 处理父节点</span></div><div class="line">        push_up(i);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>叶子节点所在的层上的节点数为M， 叶子结点之前的节点数也是M，然后更新过程就可以这样的优美</p>
+<h4 id="inline-void-change-one-point-int-x-int-k"><a href="#inline-void-change-one-point-int-x-int-k" class="headerlink" title="inline void change_one_point(int x, int k)"></a>inline void change_one_point(int x, int k)</h4><p>单点修改的过程也是十分的简单， 只需要找到要修改的值所在的叶子节点，更新之后一路往上传就行, 时间复杂度O(logn)<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">change_one_point</span><span class="params">(<span class="keyword">int</span> x , <span class="keyword">int</span> k)</span> </span>&#123;</div><div class="line">    x += M;</div><div class="line">	nd[x] += k;</div><div class="line">    <span class="keyword">for</span>(x &gt;&gt;= <span class="number">1</span>; x; x &gt;&gt;= <span class="number">1</span>) &#123;</div><div class="line">        push_up(x);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="inline-void-change-section-int-l-int-r-int-k"><a href="#inline-void-change-section-int-l-int-r-int-k" class="headerlink" title="inline void change_section(int l, int r, int k)"></a>inline void change_section(int l, int r, int k)</h4><p><del>这是个坑，暂时不解决</del></p>
+<h4 id="inline-int-query-int-l-int-r"><a href="#inline-int-query-int-l-int-r" class="headerlink" title="inline int query(int l, int r)"></a>inline int query(int l, int r)</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">query</span><span class="params">(<span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(l = M + l - <span class="number">1</span>, r = M + r + <span class="number">1</span>; l ^ r ^ <span class="number">1</span>; l &gt;&gt;= <span class="number">1</span>, r &gt;&gt;= <span class="number">1</span>) &#123; <span class="comment">// l = M + l - 1, r = M + r + 1, 意思是将l 和 r 变成开区间，l ^ r ^ 1  --&gt;  not l ^ r == 1  --&gt;  l 和 r不是同一节点的两个子节点</span></div><div class="line">        <span class="keyword">if</span>(~l &amp; <span class="number">1</span>) ans += nd[l + <span class="number">1</span>];<span class="comment">// l是左子区间                       </span></div><div class="line">        <span class="keyword">if</span>(r &amp; <span class="number">1</span>) ans += nd[r - <span class="number">1</span>]; <span class="comment">// r是右子区间                       </span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> ans;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>一大坨毒瘤的位运算。。。<br>每个位运算的意思都在代码里解释了，如果还是感觉毒瘤可以尝试看看zkw论文里的伪代码<br><img src="http://218.28.19.228/upload/image/20170508/20170508190124_55300.png" alt="区间查询"></p>
+<h4 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…"></a>未完待续…</h4>
+          
         
       
     </div>
@@ -1464,20 +1642,15 @@ qwq有没有dalao安利我绘图工具
       
         
           
-          因为自己乱搞Ubuntu，在Ubuntu下进行了一些类似于  
+            <p>因为自己乱搞Ubuntu，在Ubuntu下进行了一些类似于  </p>
+<blockquote>
+<p>cd /<br>sudo rm -rf</p>
+</blockquote>
+<p>的错误操作，<br>导致Ubuntu系统崩盘，顺带清了一个盘<br>甚至电脑启动不了了几次<br>磁盘恢复就恢复出来几篇文章，剩下的还有自己去网上抠。。<br>惨死。。</p>
+<p>嗯，就假装是一次博客升级吧，恢复文章的过程还顺便去fock了别人的一个主题，<br>估计是码代码时候熟悉黑色背景了，这款主题也是看着很舒服，也算很开心吧。<br>这次集训我在课余时间重装了数十次Ubuntu，虽然很崩溃吧，但是学到了很多， 还搞到了一个非常爽的编辑器<strong><em>atom</em></strong>， 强推。<br><strong><em>震惊！kZime看了之后连Vim都弃了！  </em></strong></p>
+<p>就是这种感觉。 Vim虽然有着很棒的码代码的手感，但编译，调试时甚是麻烦，而且代码补全插件我一直搞不好qwq，就很气，但<strong><em>atom</em></strong>不仅手感好，各种插件也做的很方便。有一个小细节我要点个赞，之前不管是devc还是vim，关于编码方面都处理的不是太好，vim还行，认死一个UTF-8就够了，但devc会把UTF-8的代码注释弄成乱码，在devc是的代码注释移动到vim又成乱码了，notepad++在这块做的还好，至少可以很方便的转换编码。<strong><em>atom</em></strong>而可以直接在编辑器右下角调成自动选择编码模式，这样就很爽了。而且atom作为github的产品，开源免费是必须的，还可以直接在atom呢下载github上的插件，主题。vim模式插件不用说，连Emacs插件也有。还有强大的自定义功能，加上几个插件， 就可以说是IDE了。</p>
 
-cd /sudo rm -rf
-
-的错误操作，导致Ubuntu系统崩盘，顺带清了一个盘甚至电脑启动不了了几次磁盘恢复就恢复出来几篇文章，剩下的还有自己去网上抠。。惨死。。
-嗯，就假装是一次博客升级吧，恢复文章的过程还顺便去fock了别
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/04/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
@@ -1637,17 +1810,18 @@ cd /sudo rm -rf
       
         
           
-          OI生涯经历的第一场省选，惨烈无比纪念syz18界学长 XTT, TYS, DCHssy18界学长学姐 MK, KZNS, 农场主， 克泽风，
+            <p>OI生涯经历的第一场省选，惨烈无比<br>纪念syz18界学长 XTT, TYS, DCH<br>ssy18界学长学姐 MK, KZNS, 农场主， 克泽风，</p>
+<hr>
+<h3 id="DAY-7"><a href="#DAY-7" class="headerlink" title="DAY -7"></a>DAY -7</h3><p>  周日和一群dalao去参加轻院校赛，和wb，学长tys一队，队名很鬼畜。<br>  开考读题，直接把一道看上去很水的最短路D递给tys了，然后wb继续看题，我看着tys码spfa，感觉没什么问题犹豫了一下，提交了，直接RE，开门GG，心态全无，感觉是边数开小了，又交了一次，仍然RE。。慌得直接换题。然后我和wb讨论A题的三维坐标下点到直线的距离，推广不出来。换题，看到E题以为是个很简单的贪心，交给tys，打着打着突然感觉不对劲，少考虑好多影响（结束后问了才知道是个网络流。。。，考试中间评测服务器掉线，写了4道题，服务器上线后交完连WA带TLE加RE。。最后只A了两道题，带着狗牌走掉。天天队伍A了8道题，拿到了rk3，一中mjl两人队A8题rk2，mjl太强了aaaa…离开的时候发誓明年再来参加一定AK全场。<br>  比完赛跟着天天，省实验的人，一中的mjl去吃饭，看速8，然后跟ldl，KZ坐出租回家</p>
+<h3 id="DAY-6-3"><a href="#DAY-6-3" class="headerlink" title="DAY -6 ~ -3"></a>DAY -6 ~ -3</h3><p>  在省实验集训，每天上午都在实验内网考试，考到中文12点， 然后我就会和wb一起去学校对面碰碰凉要不是玩王者农药，要不是码代码，平均一次A一道最水的题吧。。考完两天突然把比赛放在192.168.1.12上了，用账户条登陆。然后就体验到省实验著名的颓废机房（233。老师讲的东西基本上听不懂。。。<br>  每天晚上10点去实验操场找粽子，和她散散步，聊聊天。。。开心</p>
+<h3 id="DAY-2-1"><a href="#DAY-2-1" class="headerlink" title="DAY -2 ~ -1"></a>DAY -2 ~ -1</h3><p>  白天日常，晚上刷CF，见前一篇博客。然后睡在机房，睡前和mk，zf聊了很多人，很多事，mk睡之前确定的说，感觉自己还是有很大机会进队的，自己很自信自己的水平。我们也希望mk能进队。<br>  日常，不过没比赛，今天wb没来实验，我写了写水题就跟着大家浮了起来，下午，机房里的人都去看考场或者订宾馆了，我见人少，就回家了。</p>
+<h3 id="DAY-0上午"><a href="#DAY-0上午" class="headerlink" title="DAY 0上午"></a>DAY 0上午</h3><p>  早上去郑大找不到考场在哪，转了好几圈，我qq问mjl知道不知道在哪，他也表示懵逼。然后突然在路上发现一只野生的天天，就直接跟着他跑了，找到之后给mjl说考场在哪。（后来看他博客知道他是考前5分钟进的考场。<br>  到考场时已经有点晚了，赶快准备准备环境，安装安装IDE， 突然在D盘资源文件夹里看到了个smartc。我直接喊了一句woc，这玩意我前天在省实验集训的时候才在网上见过，内含各种模板，之前我还玩了半天模板里的游戏。我打开翻了翻，发现里面的代码模板没有被清除，立马预见到这次HAOI又改有问题了。。<br>  t1刚拿到的时候感觉是跟强连通分量，双联通分量什么的有关，但又没思路，就直接码暴力。码到一半脑补出了一个我解决不了的样例，对暴力的正确性产生了怀疑。然后直接放弃，t2直接按照题面意思码一个暴力出来。t3有3种操作，其中只有第一种操作就能过6个点，当时时间也不太够了，直接码起异或版spfa。但是因为样例抄错了耽误了很多时间。码完还剩两分钟玩起了smartc里的俄罗 斯方块。</p>
+<h3 id="DAY-0下午"><a href="#DAY-0下午" class="headerlink" title="DAY 0下午"></a>DAY 0下午</h3><p>  出来之后表示大家写的都是暴力，心态还好。但是TYS专注码t2后缀数组，因为记错一个变量名爆零，其它题一点没码。听我说smartc上有后缀数组的模板后直接个ccf发了封邮件。<br>  下午t1看出来是个DP了，但是题面看不太明白，就先把t2的20分暴力码了，然后t1还是看不懂，就各种玩。电脑里有啥玩啥。<br>  考完mk说感觉自己要擦线进队了。<br>  天天，sxy和杨老师留在那等结果，我们直接回学校，回家。<br>  回家睡到7点回学校。</p>
+<h3 id="DAY-1"><a href="#DAY-1" class="headerlink" title="DAY 1"></a>DAY 1</h3><p>  空间被mjl刷屏了，似乎评测用的lemon内存设置出问题了，好多人mle掉。又有人说下午t1数据太水，不考虑障碍情况的裸dp就过了8个点，然后这几天就各种申诉。在学校学文化课，偶尔会机房码题。</p>
+<h3 id="DAY-3"><a href="#DAY-3" class="headerlink" title="DAY 3"></a>DAY 3</h3><p>  成绩出了mjl rk3强势进队，焦作一中进来3个，安阳一中进了2个，郑州一中进了2个。郑州一中的两个里还都是高一的。Rapiz被学弟擦线挤出队，rk8。省实验没有进队，其中农场主考的最高，mk也没有成功。。<br>  zsb下午t1裸dp过了8个点，120分，sxydalao110分，不知道会不会买D进队，TYS上午爆零，下午拿了90分，拿到一等，我60分，rk23，差1个点一等。。。wb，wzz爆零，天天学长。。爆零。<br>  不知道为什么，本来最有希望，最强的天天爆零了。好像因为函数名写错，文件读入输出写错。。。但感觉好可惜。<br>  然后后面的几天都没看到天天。</p>
+<h3 id="DAY-5"><a href="#DAY-5" class="headerlink" title="DAY 5"></a>DAY 5</h3><p>  省选风波过去了，本来想着OI可以放一放了，学校开了运动会，mjl去济南集训了，cogs上一个邯郸一中的好友也问我要不要去济南，我就自己一人出发了，走上了自己的路。</p>
 
-DAY -7  周日和一群dalao去参加轻院校赛，和wb，学长tys一队，队名很鬼畜。  开考读题，直接把一道看上去很水的最短路D递给tys了，然后wb
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/04/22/HAOI2017/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
