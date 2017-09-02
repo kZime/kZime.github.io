@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kzime.xyz/"/>
-  <updated>2017-06-19T09:10:03.000Z</updated>
+  <updated>2017-08-18T11:01:45.314Z</updated>
   <id>http://kzime.xyz/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://kzime.xyz/2017/06/19/input/"/>
     <id>http://kzime.xyz/2017/06/19/input/</id>
     <published>2017-06-19T09:08:47.000Z</published>
-    <updated>2017-06-19T09:10:03.000Z</updated>
+    <updated>2017-08-18T11:01:45.314Z</updated>
     
     <content type="html"><![CDATA[<p>数据: 1e7</p>
 <p>数据范围: int</p>
@@ -54,7 +54,7 @@
     <link href="http://kzime.xyz/2017/06/19/Network-flow/"/>
     <id>http://kzime.xyz/2017/06/19/Network-flow/</id>
     <published>2017-06-19T07:00:43.000Z</published>
-    <updated>2017-06-25T06:24:32.169Z</updated>
+    <updated>2017-08-18T11:01:45.318Z</updated>
     
     <content type="html"><![CDATA[<p>好久之前就想搞个这个了。。</p>
 <table>
@@ -268,7 +268,7 @@
     <link href="http://kzime.xyz/2017/06/19/soultap/"/>
     <id>http://kzime.xyz/2017/06/19/soultap/</id>
     <published>2017-06-19T02:02:20.000Z</published>
-    <updated>2017-06-19T02:13:44.000Z</updated>
+    <updated>2017-08-18T11:01:45.350Z</updated>
     
     <content type="html"><![CDATA[<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><blockquote>
 <p>幽暗城皇家炼金师赫布瑞姆刚刚发明了一种用来折磨战俘的新型药 剂，这种药剂被称为灵魂分流药剂。灵魂分流药剂的妙处在于能够给战俘带来巨大的痛苦，但是却不会让战俘死去。这种药剂中包含了一些治疗的成分，所以即使战 俘想自尽，也会被救活。用这种求生不得，求死不能的感觉，来对付反对希尔瓦娜斯女王的狂徒们，实在是太美妙了。当然，灵魂分流药剂要限定在一个用量范围之 内，过少会达不到效果，而过多会直接杀了战俘。</p>
@@ -316,7 +316,7 @@
     <link href="http://kzime.xyz/2017/06/18/Telecowmunication/"/>
     <id>http://kzime.xyz/2017/06/18/Telecowmunication/</id>
     <published>2017-06-18T12:13:44.000Z</published>
-    <updated>2017-06-18T12:39:13.000Z</updated>
+    <updated>2017-08-18T11:01:45.310Z</updated>
     
     <content type="html"><![CDATA[<h3 id="题面描述"><a href="#题面描述" class="headerlink" title="题面描述"></a>题面描述</h3><blockquote>
 <p>农夫约翰的奶牛们喜欢通过电邮保持联系，于是她们建立了一个奶牛电脑网络，以便互相交流。这些机器用如下的方式发送电邮：如果存在一个由c台电脑组成的序列a1,a2,…,a(c)，且a1与a2相连，a2与a3相连，等等，那么电脑a1和a(c)就可以互发电邮。</p>
@@ -370,7 +370,7 @@
     <link href="http://kzime.xyz/2017/05/08/zkw/"/>
     <id>http://kzime.xyz/2017/05/08/zkw/</id>
     <published>2017-05-08T11:03:13.000Z</published>
-    <updated>2017-05-25T01:06:13.000Z</updated>
+    <updated>2017-08-18T11:01:45.330Z</updated>
     
     <content type="html"><![CDATA[<h3 id="ZKW线段树！！！"><a href="#ZKW线段树！！！" class="headerlink" title="ZKW线段树！！！"></a>ZKW线段树！！！</h3><blockquote>
 <p>出处 :  <a href="https://wenku.baidu.com/view/0c1bbba40029bd64783e2cca.html" target="_blank" rel="external">统计的力量</a> by THU张昆玮</p>
@@ -417,7 +417,7 @@
     <link href="http://kzime.xyz/2017/05/04/hello-world/"/>
     <id>http://kzime.xyz/2017/05/04/hello-world/</id>
     <published>2017-05-04T08:42:26.000Z</published>
-    <updated>2017-05-04T09:13:20.000Z</updated>
+    <updated>2017-08-18T11:01:45.342Z</updated>
     
     <content type="html"><![CDATA[<p>因为自己乱搞Ubuntu，在Ubuntu下进行了一些类似于  </p>
 <blockquote>
@@ -444,38 +444,11 @@
   </entry>
   
   <entry>
-    <title>CF#410div2</title>
-    <link href="http://kzime.xyz/2017/04/22/CF-410div2/"/>
-    <id>http://kzime.xyz/2017/04/22/CF-410div2/</id>
-    <published>2017-04-22T00:18:51.000Z</published>
-    <updated>2017-04-22T00:53:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。</p>
-<p><strong>真心祝愿MK学长省选进队！！</strong>（不是奶</p>
-<p>明天就是省选了    </p>
-<blockquote>
-<p>JLOI, HEOI, HLOI, SHOI, SNOI, HAOI, SXOI, FJOI, LNOI, GZOI</p>
-</blockquote>
-<p><strong><em>BLESS ALL</em></strong></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>(<span class="literal">true</span>) RP++;</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。&lt;/
-    
-    </summary>
-    
-    
-      <category term="比赛" scheme="http://kzime.xyz/tags/%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>HAOI2017游记</title>
     <link href="http://kzime.xyz/2017/04/22/HAOI2017/"/>
     <id>http://kzime.xyz/2017/04/22/HAOI2017/</id>
     <published>2017-04-22T00:18:51.000Z</published>
-    <updated>2017-05-04T10:16:28.000Z</updated>
+    <updated>2017-08-18T11:01:45.314Z</updated>
     
     <content type="html"><![CDATA[<p>OI生涯经历的第一场省选，惨烈无比<br>纪念syz18界学长 XTT, TYS, DCH<br>ssy18界学长学姐 MK, KZNS, 农场主， 克泽风，</p>
 <hr>
@@ -503,11 +476,38 @@
   </entry>
   
   <entry>
+    <title>CF#410div2</title>
+    <link href="http://kzime.xyz/2017/04/22/CF-410div2/"/>
+    <id>http://kzime.xyz/2017/04/22/CF-410div2/</id>
+    <published>2017-04-22T00:18:51.000Z</published>
+    <updated>2017-08-18T11:01:45.346Z</updated>
+    
+    <content type="html"><![CDATA[<p>这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。</p>
+<p><strong>真心祝愿MK学长省选进队！！</strong>（不是奶</p>
+<p>明天就是省选了    </p>
+<blockquote>
+<p>JLOI, HEOI, HLOI, SHOI, SNOI, HAOI, SXOI, FJOI, LNOI, GZOI</p>
+</blockquote>
+<p><strong><em>BLESS ALL</em></strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>(<span class="literal">true</span>) RP++;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这次比赛是真的开心，是在省选集训的时候和省实验的zf和mk一起打的，先是打到11点45， 然后跑到楼下创客活动室躲到比赛结束才会楼上机房，正准备继续写题的时候去组团上厕所的mk和zf突然跑回来让关灯躲起来，躲到凌晨1点才敢开灯，就直接去睡觉了。睡前和mk，zf聊了很多。&lt;/
+    
+    </summary>
+    
+    
+      <category term="比赛" scheme="http://kzime.xyz/tags/%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CF#408div2</title>
     <link href="http://kzime.xyz/2017/04/11/CF-408div2/"/>
     <id>http://kzime.xyz/2017/04/11/CF-408div2/</id>
     <published>2017-04-10T18:55:51.000Z</published>
-    <updated>2017-04-10T19:06:57.000Z</updated>
+    <updated>2017-08-18T11:01:45.350Z</updated>
     
     <content type="html"><![CDATA[<p>第一次在晚上熬夜打CF，虽然准备的很充足，但还是只A了两道模拟，其中B题还被HACK掉了一次。。。经过mly的指点才把HACK点改掉，然后就是C，刚开始没思路，dalao们确认贪心可做之后就开始瞎JB贪了起来，然后WAWAWAWAWA。。。。<br>结果rating–<br>瘫</p>
 <p>多做题吧，骚年</p>
@@ -530,7 +530,7 @@
     <link href="http://kzime.xyz/2017/03/27/ha14%E6%91%87%E6%9D%86%E7%9B%91%E6%B5%8B/"/>
     <id>http://kzime.xyz/2017/03/27/ha14摇杆监测/</id>
     <published>2017-03-27T07:06:26.000Z</published>
-    <updated>2017-05-03T14:56:25.000Z</updated>
+    <updated>2017-08-18T11:01:45.326Z</updated>
     
     <content type="html"><![CDATA[<h1 id="HAOI2014-遥感监测"><a href="#HAOI2014-遥感监测" class="headerlink" title="[HAOI2014]遥感监测"></a><a href="#HAOI2014-遥感监测" title="[HAOI2014]遥感监测"></a><a href="http://cogs.pro/cogs/problem/problem.php?pid=1679" target="_blank" rel="external">[HAOI2014]遥感监测</a></h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="#题目描述" title="题目描述"></a>题目描述</h2><blockquote>
 <p>外星人指的是地球以外的智慧生命。外星人长的是不是与地球上的人一样并不重要，但起码应该符合我们目前对生命基本形式的认识。比如，我们所知的任何生命都离不开液态水，并且都是基于化学元素碳（C）的有机分子组合成的复杂有机体。<br><a id="more"></a><br>ZDM实验室的天文学家们已经执著地观测ZDM-99星球十多年了，这个被称为“战神”的红色星球让他如此着迷。在过去的十多年中，他经常有一些令人激动的发现。ZDM-99星球表面有着明显的明暗变化。对这些明暗区域，天文学家们已经细致地研究了很多年，并且绘制出了较为详尽的地图，那些暗区是陆地，而亮区则是湖泊和海洋。他们一直坚信有水的地方，一定有生命的痕迹。</p>
@@ -580,7 +580,7 @@
     <link href="http://kzime.xyz/2017/03/25/12dora/"/>
     <id>http://kzime.xyz/2017/03/25/12dora/</id>
     <published>2017-03-25T07:11:32.000Z</published>
-    <updated>2017-05-04T08:40:50.000Z</updated>
+    <updated>2017-08-18T11:01:45.326Z</updated>
     
     <content type="html"><![CDATA[<p>“我所做的一切都是为了守护我亲爱的B站”。<br>        ———— 12dora</p>
 ]]></content>
@@ -602,7 +602,7 @@
     <link href="http://kzime.xyz/2017/03/20/HAOI2013%E9%A2%98%E8%A7%A3/"/>
     <id>http://kzime.xyz/2017/03/20/HAOI2013题解/</id>
     <published>2017-03-20T07:06:26.000Z</published>
-    <updated>2017-05-03T15:15:33.000Z</updated>
+    <updated>2017-08-18T11:01:45.330Z</updated>
     
     <content type="html"><![CDATA[<p>HAOI2013   的特点</p>
 <blockquote>
@@ -698,7 +698,7 @@
     <link href="http://kzime.xyz/2017/03/18/OI/"/>
     <id>http://kzime.xyz/2017/03/18/OI/</id>
     <published>2017-03-18T07:06:26.000Z</published>
-    <updated>2017-05-04T08:41:57.000Z</updated>
+    <updated>2017-08-18T11:01:45.334Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>5日之内水完洛谷试炼场<br>听起来好lowB啊QAQ</p>
@@ -724,7 +724,7 @@
     <link href="http://kzime.xyz/2017/03/18/test/"/>
     <id>http://kzime.xyz/2017/03/18/test/</id>
     <published>2017-03-18T01:56:54.000Z</published>
-    <updated>2017-05-04T08:42:07.000Z</updated>
+    <updated>2017-08-18T11:01:45.346Z</updated>
     
     <content type="html"><![CDATA[<h1 id="开心开心，hexo的blog终于搞下来了"><a href="#开心开心，hexo的blog终于搞下来了" class="headerlink" title="开心开心，hexo的blog终于搞下来了"></a>开心开心，hexo的blog终于搞下来了</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"hello world"</span>);</div><div class="line">&#125;<span class="comment">/*kzime*/</span></div></pre></td></tr></table></figure>
 <h1 id="先来一发hello-world"><a href="#先来一发hello-world" class="headerlink" title="先来一发hello world"></a>先来一发hello world</h1>]]></content>
@@ -745,7 +745,7 @@
     <link href="http://kzime.xyz/2017/02/27/CCF%20337A(Puzzles)%20%E6%B0%B4dp/"/>
     <id>http://kzime.xyz/2017/02/27/CCF 337A(Puzzles) 水dp/</id>
     <published>2017-02-27T07:06:26.000Z</published>
-    <updated>2017-05-03T16:40:24.000Z</updated>
+    <updated>2017-08-18T11:01:45.342Z</updated>
     
     <content type="html"><![CDATA[<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><blockquote>
 <p>time limit per test1 second memory limit per test256<br>megabytes inputstandard input outputstandard output The end of the<br>school year is near and Ms. Manana, the teacher, will soon have to say<br>goodbye to a yet another class. She decided to prepare a goodbye<br>present for her n students and give each of them a jigsaw puzzle<br>(which, as wikipedia states, is a tiling puzzle that requires the<br>assembly of numerous small, often oddly shaped, interlocking and<br>tessellating pieces).<br>The shop assistant told the teacher that there are m puzzles in the<br>shop, but they might differ in difficulty and size. Specifically, the<br>first jigsaw puzzle consists of f1 pieces, the second one consists of<br>f2 pieces and so on.<br>Ms. Manana doesn’t want to upset the children, so she decided that the<br>difference between the numbers of pieces in her presents must be as<br>small as possible. Let A be the number of pieces in the largest puzzle<br>that the teacher buys and B be the number of pieces in the smallest<br>such puzzle. She wants to choose such n puzzles that A - B is minimum<br>possible. Help the teacher and find the least possible value of A - B.</p>
@@ -784,7 +784,7 @@
     <link href="http://kzime.xyz/2016/12/27/%E5%BF%AB%E8%AF%BB/"/>
     <id>http://kzime.xyz/2016/12/27/快读/</id>
     <published>2016-12-27T04:01:54.000Z</published>
-    <updated>2017-03-21T01:11:59.000Z</updated>
+    <updated>2017-08-18T11:01:45.334Z</updated>
     
     <content type="html"><![CDATA[<h2 id="自己在CSDN的首博"><a href="#自己在CSDN的首博" class="headerlink" title="自己在CSDN的首博"></a>自己在CSDN的首博</h2><h3 id="贴贴贴"><a href="#贴贴贴" class="headerlink" title="贴贴贴"></a>贴贴贴</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">int</span> k=<span class="number">0</span>;<span class="keyword">char</span> f=<span class="number">1</span>,c=getchar();</div><div class="line">    <span class="keyword">for</span>(;!<span class="built_in">isdigit</span>(c);c=getchar())<span class="keyword">if</span>(c==<span class="string">'-'</span>)f=<span class="number">-1</span>;</div><div class="line">    <span class="keyword">for</span>(;<span class="built_in">isdigit</span>(c);c=getchar())k=k*<span class="number">10</span>+c-<span class="string">'0'</span>;</div><div class="line">    <span class="keyword">return</span> k*f;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>养成敲快读的好习惯:)  </p>
