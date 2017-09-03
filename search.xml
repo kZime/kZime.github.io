@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[归档计划]]></title>
+    <url>%2F2017%2F09%2F03%2F%E5%BD%92%E6%A1%A3%E8%AE%A1%E5%88%92%2F</url>
+    <content type="text"><![CDATA[** [ ] 欧几里得算法 [*] 扩展欧几里得算法 [*] 快速幂 [ ] 逆元 [ ] 中国剩余定理 [ ] BSGS 和 EX-BSGS [*] 矩阵乘法 [ ] 高斯消元 [ ] 行列式 [ ] Miller-Rabin [ ] Pollard-Rho [*] 线性筛 [*] 组合数 [ ] 数论函数 [ ] 莫比乌斯反演 [ ] 原根 [ ] Fast Fourier Transformation [ ] Fast Number-Theoretic Transform [ ] 斯特林数 [ ] 群论 [ ] Burnside 引理 [ ] Pólya 定理 [ ] 博弈论 [ ] 杜教筛 [ ] *单纯形线性规划 [ ] *Fast Walsh-Hadamard Transform [ ] *母函数 [*] *高精度 [ ] 字符串 [*] Hash [*] KMP [ ] 扩展 KMP [*] Trie [ ] Suffix Automation [ ] Suffix Array [*] Manacher [*] Aho-Corasick Automation [ ] Palindrome Automation [ ] 最小表示法 [ ] *Suffix Tree [ ] *Palindrome Tree [ ] *Suffix Balanced Tree [ ] *regex.h [ ] 搜索 [ ] 双向搜索 [ ] A* [ ] 迭代加深 [ ] 折半搜索 [*] 状态压缩 [ ] 数据结构 [ ] Binary Indexed Tree [ ] Hash Map [ ] Union-Find Set [ ] Dancing Links [ ] Priority Queue [ ] K-Dimensional Tree [ ] Mergeable Heap [*] Segment Tree [*] ZKW Segment Tree [*] Sparse Table [*] Balanced Tree [ ] Link-Cut Tree [ ] Dominator Tree [*] RMQ [*] 树链剖分 [ ] 点分治 [ ] 点分树 [ ] 分块 [*] 可持久化数据结构 [ ] 启发式合并 [ ] 虚树 [ ] 带花树 [ ] *块状链表 [ ] *跳跃链表 [ ] *块状树 [ ] *长链剖分 [ ] 图论 [*] 最短路 [ ] 第$k$短路 [ ] 次短路 [ ] 差分约束系统 [*] 最小生成树 [*] 次小生成树 [*] 连通分量 [ ] 割点割边 [ ] 拓扑排序 [*] 最大流 [*] 费用流 [ ] 上下界网络流 [ ] 最大匹配 [ ] 最大权匹配 [ ] 2-SAT [ ] 欧拉回路 [ ] 最小树形图 [ ] *仙人掌 [ ] 计算几何 [ ] 基本关系 [ ] 多边形 [*] 凸包 [ ] 半平面交 [ ] 旋转卡壳 [ ] 圆 [ ] 爬山 [ ] 模拟退火 [ ] 随机增量法 [ ] *三维几何 [ ] *高维几何 [ ] 动态规划 [*] 经典 dp 模型 [*] 线性 dp [ ] 多路 dp [ ] 环形 dp [*] 树型 dp [*] 记忆化搜索 [ ] 数位 dp [*] 状压 dp [ ] 单调性优化 [ ] 决策性优化 [ ] 斜率优化 [ ] 四边形不等式优化 [ ] 期望 dp [ ] 插头 dp [ ] 其他 [ ] 分治 [ ] CDQ 分治 [ ] 莫队 [ ] 整体二分 [ ] 01-分数规划 用了一些奇技淫巧, 非常可耻的从xehoth扣过来的quq]]></content>
+      <tags>
+        <tag>OI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[post]]></title>
+    <url>%2F2017%2F09%2F03%2Fpost%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[c++读入比较]]></title>
     <url>%2F2017%2F06%2F19%2Finput%2F</url>
     <content type="text"><![CDATA[数据: 1e7 数据范围: int 重定向文件读入 优化: 无 cin1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123; int n, k; cin &gt;&gt; n; for(int i = 1; i &lt;= n; i++) &#123; cin &gt;&gt; k; &#125;&#125;/* real 0m8.912s user 0m8.844s sys 0m0.048s*/ cin 取消兼容stdio123456789101112131415# include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123; ios::sync_with_stdio(false); int n, k; cin &gt;&gt; n; for(int i = 1; i &lt;= n; i++) &#123; cin &gt;&gt; k; &#125;&#125;/* real 0m1.897s user 0m1.844s sys 0m0.032s*/ scanf1234567891011121314# include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123; int n, k; scanf("%d", &amp;n); for(int i = 1; i &lt;= n; i++) &#123; scanf("%d", &amp;k); &#125;&#125;/* real 0m2.180s user 0m2.140s sys 0m0.028s*/ getchar()123456789101112131415161718192021# include &lt;bits/stdc++.h&gt;using namespace std;inline int gn() &#123; int k = 0, f = 1; char c = getchar(); for(; !isdigit(c); c = getchar()) if(c == '-') f = -1; for(; isdigit(c); c = getchar()) k = k * 10 + c - '0'; return k * f;&#125;int main() &#123; int n, k; n = gn(); for(int i = 1; i &lt;= n; i++) &#123; k = gn(); &#125;&#125;/* real 0m1.642s user 0m1.588s sys 0m0.052s*/ fread()12345678910111213141516171819202122232425# include &lt;bits/stdc++.h&gt;using namespace std;inline char getc() &#123; static char buf[1 &lt;&lt; 18], *fs, *ft; return (fs == ft &amp;&amp; (ft = (fs = buf) + fread(buf, 1, 1 &lt;&lt; 18, stdin)), fs == ft) ? EOF : *fs++;&#125;inline int gn() &#123; register int k = 0, f = 1; register char c = getc(); for(; !isdigit(c); c = getc()) if(c == '-') f = -1; for(; isdigit(c); c = getc()) k = k * 10 + c - '0'; return k * f;&#125;int main() &#123; int n, k; n = gn(); for(int i = 1; i &lt;= n; i++) &#123; k = gn(); &#125;&#125;/* real 0m0.648s user 0m0.608s sys 0m0.036s*/ 显而易见，在OI系列比赛中，快读保平安233]]></content>
