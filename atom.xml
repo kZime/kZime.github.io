@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kzime.xyz/"/>
-  <updated>2017-09-03T06:46:18.084Z</updated>
+  <updated>2017-09-07T04:59:29.029Z</updated>
   <id>http://kzime.xyz/</id>
   
   <author>
@@ -20,162 +20,144 @@
     <link href="http://kzime.xyz/2017/09/03/%E5%BD%92%E6%A1%A3%E8%AE%A1%E5%88%92/"/>
     <id>http://kzime.xyz/2017/09/03/归档计划/</id>
     <published>2017-09-03T06:32:36.000Z</published>
-    <updated>2017-09-03T06:46:18.084Z</updated>
+    <updated>2017-09-07T04:59:29.029Z</updated>
     
-    <content type="html"><![CDATA[<p>**</p>
-<ul>
-<li><p>[ ] <strong> 欧几里得算法</strong></p>
-<ul>
-<li>[*] 扩展欧几里得算法</li>
-<li>[*] 快速幂</li>
-<li>[ ] 逆元</li>
-<li>[ ] 中国剩余定理</li>
-<li>[ ] BSGS 和 EX-BSGS</li>
-<li>[*] 矩阵乘法</li>
-<li>[ ] 高斯消元</li>
-<li>[ ] 行列式</li>
-<li>[ ] Miller-Rabin</li>
-<li>[ ] Pollard-Rho</li>
-<li>[*] 线性筛</li>
-<li>[*] 组合数</li>
-<li>[ ] 数论函数</li>
-<li>[ ] 莫比乌斯反演</li>
-<li>[ ] 原根</li>
-<li>[ ] Fast Fourier Transformation</li>
-<li>[ ] Fast Number-Theoretic Transform</li>
-<li>[ ] 斯特林数</li>
-<li>[ ] 群论</li>
-<li>[ ] Burnside 引理</li>
-<li>[ ] Pólya 定理</li>
-<li>[ ] 博弈论</li>
-<li>[ ] 杜教筛</li>
-<li>[ ] *单纯形线性规划</li>
-<li>[ ] *Fast Walsh-Hadamard Transform</li>
-<li>[ ] *母函数</li>
-<li>[*] *高精度</li>
+    <content type="html"><![CDATA[<h2 id="欧几里得算法"><a href="#欧几里得算法" class="headerlink" title="# 欧几里得算法"></a># 欧几里得算法</h2><ul>
+<li>扩展欧几里得算法</li>
+<li>快速幂</li>
+<li>逆元</li>
+<li>中国剩余定理</li>
+<li>BSGS 和 EX-BSGS</li>
+<li><del>矩阵乘法</del></li>
+<li>高斯消元</li>
+<li>行列式</li>
+<li>Miller-Rabin</li>
+<li>Pollard-Rho</li>
+<li><del>线性筛</del></li>
+<li><del>组合数</del></li>
+<li>数论函数</li>
+<li>莫比乌斯反演</li>
+<li>原根</li>
+<li>Fast Fourier Transformation</li>
+<li>Fast Number-Theoretic Transform</li>
+<li>斯特林数</li>
+<li>群论</li>
+<li>Burnside 引理</li>
+<li>Pólya 定理</li>
+<li>博弈论</li>
+<li>杜教筛</li>
+<li>*单纯形线性规划</li>
+<li>*Fast Walsh-Hadamard Transform</li>
+<li>*母函数</li>
+<li><del>*高精度</del></li>
 </ul>
-</li>
-<li><p>[ ] <strong>字符串</strong></p>
-<ul>
-<li>[*] Hash</li>
-<li>[*] KMP</li>
-<li>[ ] 扩展 KMP</li>
-<li>[*] Trie</li>
-<li>[ ] Suffix Automation</li>
-<li>[ ] Suffix Array</li>
-<li>[*] Manacher</li>
-<li>[*] Aho-Corasick Automation</li>
-<li>[ ] Palindrome Automation</li>
-<li>[ ] 最小表示法</li>
-<li>[ ] *Suffix Tree</li>
-<li>[ ] *Palindrome Tree</li>
-<li>[ ] *Suffix Balanced Tree</li>
-<li>[ ] *regex.h</li>
+<a id="more"></a>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="# 字符串"></a># 字符串</h2><ul>
+<li><del>Hash</del></li>
+<li><del>KMP</del></li>
+<li>扩展 KMP</li>
+<li><del>Trie</del></li>
+<li>Suffix Automation</li>
+<li>Suffix Array</li>
+<li><del>Manacher</del></li>
+<li><del>Aho-Corasick Automation</del></li>
+<li>Palindrome Automation</li>
+<li>最小表示法</li>
+<li>*Suffix Tree</li>
+<li>*Palindrome Tree</li>
+<li>*Suffix Balanced Tree</li>
+<li>*regex.h</li>
 </ul>
-</li>
-<li><p>[ ] <strong>搜索</strong></p>
-<ul>
-<li>[ ] 双向搜索</li>
-<li>[ ] A*</li>
-<li>[ ] 迭代加深</li>
-<li>[ ] 折半搜索</li>
-<li>[*] 状态压缩</li>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="# 搜索"></a># 搜索</h2><ul>
+<li>双向搜索</li>
+<li>A*</li>
+<li>迭代加深</li>
+<li>折半搜索</li>
+<li><del>状态压缩</del></li>
 </ul>
-</li>
-<li><p>[ ] <strong>数据结构</strong></p>
-<ul>
-<li>[ ] Binary Indexed Tree</li>
-<li>[ ] Hash Map</li>
-<li>[ ] Union-Find Set</li>
-<li>[ ] Dancing Links</li>
-<li>[ ] Priority Queue</li>
-<li>[ ] K-Dimensional Tree</li>
-<li>[ ] Mergeable Heap</li>
-<li>[*] Segment Tree</li>
-<li>[*] ZKW Segment Tree</li>
-<li>[*] Sparse Table</li>
-<li>[*] Balanced Tree</li>
-<li>[ ] Link-Cut Tree</li>
-<li>[ ] Dominator Tree</li>
-<li>[*] RMQ</li>
-<li>[*] 树链剖分</li>
-<li>[ ] 点分治</li>
-<li>[ ] 点分树</li>
-<li>[ ] 分块</li>
-<li>[*] 可持久化数据结构</li>
-<li>[ ] 启发式合并</li>
-<li>[ ] 虚树</li>
-<li>[ ] 带花树</li>
-<li>[ ] *块状链表</li>
-<li>[ ] *跳跃链表</li>
-<li>[ ] *块状树</li>
-<li>[ ] *长链剖分</li>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="# 数据结构"></a># 数据结构</h2><ul>
+<li>Binary Indexed Tree</li>
+<li>Hash Map</li>
+<li>Union-Find Set</li>
+<li>Dancing Links</li>
+<li>Priority Queue</li>
+<li>K-Dimensional Tree</li>
+<li>Mergeable Heap</li>
+<li><del>Segment Tree</del></li>
+<li><del>ZKW Segment Tree</del></li>
+<li><del>Sparse Table</del></li>
+<li><del>Balanced Tree</del></li>
+<li>Link-Cut Tree</li>
+<li>Dominator Tree</li>
+<li><del>RMQ</del></li>
+<li><del>树链剖分</del></li>
+<li>点分治</li>
+<li>点分树</li>
+<li>分块</li>
+<li><del>可持久化数据结构</del></li>
+<li>启发式合并</li>
+<li>虚树</li>
+<li>带花树</li>
+<li>*块状链表</li>
+<li>*跳跃链表</li>
+<li>*块状树</li>
+<li>*长链剖分</li>
 </ul>
-</li>
-<li><p>[ ] <strong>图论</strong></p>
-<ul>
-<li>[*] 最短路</li>
-<li>[ ] 第$k$短路</li>
-<li>[ ] 次短路</li>
-<li>[ ] 差分约束系统</li>
-<li>[*] 最小生成树</li>
-<li>[*] 次小生成树</li>
-<li>[*] 连通分量</li>
-<li>[ ] 割点割边</li>
-<li>[ ] 拓扑排序</li>
-<li>[*] 最大流</li>
-<li>[*] 费用流</li>
-<li>[ ] 上下界网络流</li>
-<li>[ ] 最大匹配</li>
-<li>[ ] 最大权匹配</li>
-<li>[ ] 2-SAT</li>
-<li>[ ] 欧拉回路</li>
-<li>[ ] 最小树形图</li>
-<li>[ ] *仙人掌</li>
+<h2 id="图论"><a href="#图论" class="headerlink" title="# 图论"></a># 图论</h2><ul>
+<li><del>最短路</del></li>
+<li>第$k$短路</li>
+<li>次短路</li>
+<li>差分约束系统</li>
+<li><del>最小生成树</del></li>
+<li><del>次小生成树</del></li>
+<li><del>连通分量</del></li>
+<li>割点割边</li>
+<li>拓扑排序</li>
+<li><del>最大流</del></li>
+<li><del>费用流</del></li>
+<li>上下界网络流</li>
+<li>最大匹配</li>
+<li>最大权匹配</li>
+<li>2-SAT</li>
+<li>欧拉回路</li>
+<li>最小树形图</li>
+<li>*仙人掌</li>
 </ul>
-</li>
-<li><p>[ ] <strong>计算几何</strong></p>
-<ul>
-<li>[ ] 基本关系</li>
-<li>[ ] 多边形</li>
-<li>[*] 凸包</li>
-<li>[ ] 半平面交</li>
-<li>[ ] 旋转卡壳</li>
-<li>[ ] 圆</li>
-<li>[ ] 爬山</li>
-<li>[ ] 模拟退火</li>
-<li>[ ] 随机增量法</li>
-<li>[ ] *三维几何</li>
-<li>[ ] *高维几何</li>
+<h2 id="计算几何"><a href="#计算几何" class="headerlink" title="# 计算几何"></a># 计算几何</h2><ul>
+<li>基本关系</li>
+<li>多边形</li>
+<li><del>凸包</del></li>
+<li>半平面交</li>
+<li>旋转卡壳</li>
+<li>圆</li>
+<li>爬山</li>
+<li>模拟退火</li>
+<li>随机增量法</li>
+<li>*三维几何</li>
+<li>*高维几何</li>
 </ul>
-</li>
-<li><p>[ ] <strong>动态规划</strong></p>
-<ul>
-<li>[*] 经典 dp 模型</li>
-<li>[*] 线性 dp</li>
-<li>[ ] 多路 dp</li>
-<li>[ ] 环形 dp</li>
-<li>[*] 树型 dp</li>
-<li>[*] 记忆化搜索</li>
-<li>[ ] 数位 dp</li>
-<li>[*] 状压 dp</li>
-<li>[ ] 单调性优化</li>
-<li>[ ] 决策性优化</li>
-<li>[ ] 斜率优化</li>
-<li>[ ] 四边形不等式优化</li>
-<li>[ ] 期望 dp</li>
-<li>[ ] 插头 dp</li>
+<h2 id="动态规划"><a href="#动态规划" class="headerlink" title="# 动态规划"></a># 动态规划</h2><ul>
+<li><del>经典 dp 模型</del></li>
+<li><del>线性 dp</del></li>
+<li>多路 dp</li>
+<li>环形 dp</li>
+<li><del>树型 dp</del></li>
+<li><del>记忆化搜索</del></li>
+<li>数位 dp</li>
+<li><del>状压 dp</del></li>
+<li>单调性优化</li>
+<li>决策性优化</li>
+<li>斜率优化</li>
+<li>四边形不等式优化</li>
+<li>期望 dp</li>
+<li>插头 dp</li>
 </ul>
-</li>
-<li><p>[ ] <strong>其他</strong></p>
-<ul>
-<li>[ ] 分治</li>
-<li>[ ] CDQ 分治</li>
-<li>[ ] 莫队</li>
-<li>[ ] 整体二分</li>
-<li>[ ] 01-分数规划</li>
-</ul>
-</li>
+<h2 id="其他"><a href="#其他" class="headerlink" title="# 其他"></a># 其他</h2><ul>
+<li>分治</li>
+<li>CDQ 分治</li>
+<li>莫队</li>
+<li>整体二分</li>
+<li>01-分数规划</li>
 </ul>
 <hr>
 <p>用了一些奇技淫巧, 非常可耻的从<a href="https://blog.xehoth.cc/DurationPlan/#footer" target="_blank" rel="external">xehoth</a>扣过来的quq</p>
@@ -183,15 +165,35 @@
     
     <summary type="html">
     
-      &lt;p&gt;**&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;[ ] &lt;strong&gt; 欧几里得算法&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[*] 扩展欧几里得算法&lt;/li&gt;
-&lt;li&gt;[*] 快速幂&lt;/li&gt;
-&lt;li&gt;[ ] 逆元&lt;/li&gt;
-&lt;li&gt;[ ] 中国剩余定理&lt;/li&gt;
-&lt;li&gt;[
+      &lt;h2 id=&quot;欧几里得算法&quot;&gt;&lt;a href=&quot;#欧几里得算法&quot; class=&quot;headerlink&quot; title=&quot;# 欧几里得算法&quot;&gt;&lt;/a&gt;# 欧几里得算法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;扩展欧几里得算法&lt;/li&gt;
+&lt;li&gt;快速幂&lt;/li&gt;
+&lt;li&gt;逆元&lt;/li&gt;
+&lt;li&gt;中国剩余定理&lt;/li&gt;
+&lt;li&gt;BSGS 和 EX-BSGS&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;矩阵乘法&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;高斯消元&lt;/li&gt;
+&lt;li&gt;行列式&lt;/li&gt;
+&lt;li&gt;Miller-Rabin&lt;/li&gt;
+&lt;li&gt;Pollard-Rho&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;线性筛&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;组合数&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;数论函数&lt;/li&gt;
+&lt;li&gt;莫比乌斯反演&lt;/li&gt;
+&lt;li&gt;原根&lt;/li&gt;
+&lt;li&gt;Fast Fourier Transformation&lt;/li&gt;
+&lt;li&gt;Fast Number-Theoretic Transform&lt;/li&gt;
+&lt;li&gt;斯特林数&lt;/li&gt;
+&lt;li&gt;群论&lt;/li&gt;
+&lt;li&gt;Burnside 引理&lt;/li&gt;
+&lt;li&gt;Pólya 定理&lt;/li&gt;
+&lt;li&gt;博弈论&lt;/li&gt;
+&lt;li&gt;杜教筛&lt;/li&gt;
+&lt;li&gt;*单纯形线性规划&lt;/li&gt;
+&lt;li&gt;*Fast Walsh-Hadamard Transform&lt;/li&gt;
+&lt;li&gt;*母函数&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;*高精度&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -201,30 +203,17 @@
   </entry>
   
   <entry>
-    <title>post</title>
-    <link href="http://kzime.xyz/2017/09/03/post/"/>
-    <id>http://kzime.xyz/2017/09/03/post/</id>
-    <published>2017-09-03T06:32:20.000Z</published>
-    <updated>2017-09-03T06:32:20.226Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>c++读入比较</title>
     <link href="http://kzime.xyz/2017/06/19/input/"/>
     <id>http://kzime.xyz/2017/06/19/input/</id>
     <published>2017-06-19T09:08:47.000Z</published>
-    <updated>2017-08-18T11:01:45.314Z</updated>
+    <updated>2017-09-07T04:41:54.772Z</updated>
     
     <content type="html"><![CDATA[<p>数据: 1e7</p>
 <p>数据范围: int</p>
 <p>重定向文件读入</p>
 <p>优化: 无</p>
+<a id="more"></a>
 <h4 id="cin"><a href="#cin" class="headerlink" title="cin"></a>cin</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">cin</span> &gt;&gt; k;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">    real    0m8.912s</div><div class="line">    user    0m8.844s</div><div class="line">    sys     0m0.048s</div><div class="line">*/</div></pre></td></tr></table></figure>
 <h4 id="cin-取消兼容stdio"><a href="#cin-取消兼容stdio" class="headerlink" title="cin 取消兼容stdio"></a>cin 取消兼容stdio</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">cin</span> &gt;&gt; k;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">	real	0m1.897s</div><div class="line">	user	0m1.844s</div><div class="line">	sys		0m0.032s</div><div class="line">*/</div></pre></td></tr></table></figure>
 <h4 id="scanf"><a href="#scanf" class="headerlink" title="scanf"></a>scanf</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </div><div class="line">    <span class="keyword">int</span> n, k;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; </div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">    real	0m2.180s</div><div class="line">    user	0m2.140s</div><div class="line">    sys	    0m0.028s</div><div class="line">*/</div></pre></td></tr></table></figure>
@@ -239,7 +228,6 @@
 &lt;p&gt;数据范围: int&lt;/p&gt;
 &lt;p&gt;重定向文件读入&lt;/p&gt;
 &lt;p&gt;优化: 无&lt;/p&gt;
-&lt;h4 id=&quot;cin&quot;&gt;&lt;a href=&quot;#cin&quot; class=&quot;headerlink&quot; title=&quot;cin&quot;&gt;&lt;/a&gt;cin&lt;/h4&gt;&lt;figure c
     
     </summary>
     
